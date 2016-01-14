@@ -1,0 +1,41 @@
+2016/01/14 13:16:59 [error] [php] date(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. (/Users/Tacit/Sites/MorPa/protected/views/layouts/main.php:51)
+Stack trace:
+#0 /Users/Tacit/Sites/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#1 /Users/Tacit/Sites/framework/web/widgets/CContentDecorator.php(76): SiteController->renderFile()
+#2 /Users/Tacit/Sites/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate()
+#3 /Users/Tacit/Sites/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput()
+#4 /Users/Tacit/Sites/framework/web/CBaseController.php(214): CContentDecorator->run()
+#5 /Users/Tacit/Sites/framework/web/CBaseController.php(308): SiteController->endWidget()
+#6 /Users/Tacit/Sites/MorPa/protected/views/layouts/column1.php(6): SiteController->endContent()
+#7 /Users/Tacit/Sites/framework/web/CBaseController.php(126): require()
+#8 /Users/Tacit/Sites/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#9 /Users/Tacit/Sites/framework/web/CController.php(784): SiteController->renderFile()
+#10 /Users/Tacit/Sites/MorPa/protected/controllers/SiteController.php(32): SiteController->render()
+#11 /Users/Tacit/Sites/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#12 /Users/Tacit/Sites/framework/web/CController.php(308): CInlineAction->runWithParams()
+#13 /Users/Tacit/Sites/framework/web/CController.php(286): SiteController->runAction()
+#14 /Users/Tacit/Sites/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#15 /Users/Tacit/Sites/framework/web/CWebApplication.php(282): SiteController->run()
+#16 /Users/Tacit/Sites/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#17 /Users/Tacit/Sites/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#18 /Users/Tacit/Sites/MorPa/index.php(13): CWebApplication->run()
+REQUEST_URI=/MorPa/
+in /Users/Tacit/Sites/MorPa/protected/views/layouts/main.php (51)
+in /Users/Tacit/Sites/MorPa/protected/views/layouts/column1.php (6)
+in /Users/Tacit/Sites/MorPa/protected/controllers/SiteController.php (32)
+2016/01/14 15:24:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "zii".' in /Users/Tacit/Sites/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/Tacit/Sites/framework/web/CWebApplication.php(141): CWebApplication->runController('zii')
+#1 /Users/Tacit/Sites/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /Users/Tacit/Sites/MorPa/index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/MorPa/index.php?r=zii
+---
+2016/01/14 15:24:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in /Users/Tacit/Sites/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/Tacit/Sites/framework/web/CWebApplication.php(141): CWebApplication->runController('gii')
+#1 /Users/Tacit/Sites/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /Users/Tacit/Sites/MorPa/index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/MorPa/index.php?r=gii
+---
