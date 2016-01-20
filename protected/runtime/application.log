@@ -39,3 +39,1301 @@ Stack trace:
 #3 {main}
 REQUEST_URI=/MorPa/index.php?r=gii
 ---
+2016/01/20 17:40:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "feed/index".' in /Users/Tacit/Sites/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/Tacit/Sites/framework/web/CWebApplication.php(141): CWebApplication->runController('feed/index')
+#1 /Users/Tacit/Sites/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /Users/Tacit/Sites/MorPa/index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/MorPa/index.php?r=feed/index
+HTTP_REFERER=http://localhost/MorPa/index.php
+---
+2016/01/20 17:40:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "feed/index".' in /Users/Tacit/Sites/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/Tacit/Sites/framework/web/CWebApplication.php(141): CWebApplication->runController('feed/index')
+#1 /Users/Tacit/Sites/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /Users/Tacit/Sites/MorPa/index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/MorPa/index.php?r=feed/index
+---
+2016/01/20 17:41:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "addFeed".' in /Users/Tacit/Sites/framework/web/CController.php:483
+Stack trace:
+#0 /Users/Tacit/Sites/framework/web/CController.php(270): CController->missingAction('addFeed')
+#1 /Users/Tacit/Sites/framework/web/CWebApplication.php(282): CController->run('addFeed')
+#2 /Users/Tacit/Sites/framework/web/CWebApplication.php(141): CWebApplication->runController('site/addFeed')
+#3 /Users/Tacit/Sites/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /Users/Tacit/Sites/MorPa/index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/MorPa/index.php?r=site/addFeed
+HTTP_REFERER=http://localhost/MorPa/index.php
+---
+2016/01/20 17:42:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "addFeed".' in /Users/Tacit/Sites/framework/web/CController.php:483
+Stack trace:
+#0 /Users/Tacit/Sites/framework/web/CController.php(270): CController->missingAction('addFeed')
+#1 /Users/Tacit/Sites/framework/web/CWebApplication.php(282): CController->run('addFeed')
+#2 /Users/Tacit/Sites/framework/web/CWebApplication.php(141): CWebApplication->runController('site/addFeed')
+#3 /Users/Tacit/Sites/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /Users/Tacit/Sites/MorPa/index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/MorPa/index.php?r=site/addFeed
+---
+2016/01/20 17:42:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "addFeed".' in /Users/Tacit/Sites/framework/web/CController.php:483
+Stack trace:
+#0 /Users/Tacit/Sites/framework/web/CController.php(270): CController->missingAction('addFeed')
+#1 /Users/Tacit/Sites/framework/web/CWebApplication.php(282): CController->run('addFeed')
+#2 /Users/Tacit/Sites/framework/web/CWebApplication.php(141): CWebApplication->runController('site/addFeed')
+#3 /Users/Tacit/Sites/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /Users/Tacit/Sites/MorPa/index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/MorPa/index.php?r=site/addFeed
+HTTP_REFERER=http://localhost/MorPa/index.php?r=site/index
+---
+2016/01/20 18:02:16 [error] [php] include(Kint.php): failed to open stream: No such file or directory (/Users/Tacit/Sites/framework/YiiBase.php:432)
+Stack trace:
+#0 /Users/Tacit/Sites/MorPa/protected/views/site/index.php(14): spl_autoload_call()
+#1 /Users/Tacit/Sites/framework/web/CBaseController.php(126): require()
+#2 /Users/Tacit/Sites/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#3 /Users/Tacit/Sites/framework/web/CController.php(869): SiteController->renderFile()
+#4 /Users/Tacit/Sites/framework/web/CController.php(782): SiteController->renderPartial()
+#5 /Users/Tacit/Sites/MorPa/protected/controllers/SiteController.php(32): SiteController->render()
+#6 /Users/Tacit/Sites/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#7 /Users/Tacit/Sites/framework/web/CController.php(308): CInlineAction->runWithParams()
+#8 /Users/Tacit/Sites/framework/web/CController.php(286): SiteController->runAction()
+#9 /Users/Tacit/Sites/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#10 /Users/Tacit/Sites/framework/web/CWebApplication.php(282): SiteController->run()
+#11 /Users/Tacit/Sites/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#12 /Users/Tacit/Sites/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#13 /Users/Tacit/Sites/MorPa/index.php(22): CWebApplication->run()
+REQUEST_URI=/MorPa/index.php?r=site/index
+in /Users/Tacit/Sites/MorPa/protected/views/site/index.php (14)
+in /Users/Tacit/Sites/MorPa/protected/controllers/SiteController.php (32)
+in /Users/Tacit/Sites/MorPa/index.php (22)
+2016/01/20 18:08:05 [error] [php] curl_init() expects parameter 1 to be string, resource given (/Users/Tacit/Sites/MorPa/protected/views/site/index.php:23)
+Stack trace:
+#0 /Users/Tacit/Sites/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#1 /Users/Tacit/Sites/framework/web/CController.php(869): SiteController->renderFile()
+#2 /Users/Tacit/Sites/framework/web/CController.php(782): SiteController->renderPartial()
+#3 /Users/Tacit/Sites/MorPa/protected/controllers/SiteController.php(32): SiteController->render()
+#4 /Users/Tacit/Sites/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#5 /Users/Tacit/Sites/framework/web/CController.php(308): CInlineAction->runWithParams()
+#6 /Users/Tacit/Sites/framework/web/CController.php(286): SiteController->runAction()
+#7 /Users/Tacit/Sites/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#8 /Users/Tacit/Sites/framework/web/CWebApplication.php(282): SiteController->run()
+#9 /Users/Tacit/Sites/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#10 /Users/Tacit/Sites/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#11 /Users/Tacit/Sites/MorPa/index.php(23): CWebApplication->run()
+REQUEST_URI=/MorPa/index.php?r=site/index
+in /Users/Tacit/Sites/MorPa/protected/views/site/index.php (23)
+in /Users/Tacit/Sites/MorPa/protected/controllers/SiteController.php (32)
+in /Users/Tacit/Sites/MorPa/index.php (23)
+2016/01/20 18:25:49 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '://geektimes.ru/rss/)' at line 2. The SQL statement executed was: 
+        INSERT INTO feed    ( feedURL)
+        VALUES              (https://geektimes.ru/rss/);
+    .
+in /Users/Tacit/Sites/MorPa/protected/views/site/index.php (33)
+in /Users/Tacit/Sites/MorPa/protected/controllers/SiteController.php (32)
+in /Users/Tacit/Sites/MorPa/index.php (23)
+2016/01/20 18:25:49 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '://geektimes.ru/rss/)' at line 2. The SQL statement executed was: 
+        INSERT INTO feed    ( feedURL)
+        VALUES              (https://geektimes.ru/rss/);
+    ' in /Users/Tacit/Sites/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /Users/Tacit/Sites/MorPa/protected/views/site/index.php(33): CDbCommand->execute()
+#1 /Users/Tacit/Sites/framework/web/CBaseController.php(126): require('/Users/Tacit/Si...')
+#2 /Users/Tacit/Sites/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/Tacit/Si...', NULL, true)
+#3 /Users/Tacit/Sites/framework/web/CController.php(869): CBaseController->renderFile('/Users/Tacit/Si...', NULL, true)
+#4 /Users/Tacit/Sites/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#5 /Users/Tacit/Sites/MorPa/protected/controllers/SiteController.php(32): CController->render('index')
+#6 /Users/Tacit/Sites/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#7 /Users/Tacit/Sites/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /Users/Tacit/Sites/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /Users/Tacit/Sites/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /Users/Tacit/Sites/framework/web/CWebApplication.php(282): CController->run('index')
+#11 /Users/Tacit/Sites/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#12 /Users/Tacit/Sites/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#13 /Users/Tacit/Sites/MorPa/index.php(23): CApplication->run()
+#14 {main}
+REQUEST_URI=/MorPa/index.php?r=site/index
+HTTP_REFERER=http://localhost/MorPa/index.php?r=site/index
+---
+2016/01/20 18:26:15 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'https://geektimes.ru/rss/' in 'field list'. The SQL statement executed was: 
+        INSERT INTO feed    ( feedURL)
+        VALUES              (`https://geektimes.ru/rss/`);
+    .
+in /Users/Tacit/Sites/MorPa/protected/views/site/index.php (33)
+in /Users/Tacit/Sites/MorPa/protected/controllers/SiteController.php (32)
+in /Users/Tacit/Sites/MorPa/index.php (23)
+2016/01/20 18:26:15 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'https://geektimes.ru/rss/' in 'field list'. The SQL statement executed was: 
+        INSERT INTO feed    ( feedURL)
+        VALUES              (`https://geektimes.ru/rss/`);
+    ' in /Users/Tacit/Sites/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /Users/Tacit/Sites/MorPa/protected/views/site/index.php(33): CDbCommand->execute()
+#1 /Users/Tacit/Sites/framework/web/CBaseController.php(126): require('/Users/Tacit/Si...')
+#2 /Users/Tacit/Sites/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/Tacit/Si...', NULL, true)
+#3 /Users/Tacit/Sites/framework/web/CController.php(869): CBaseController->renderFile('/Users/Tacit/Si...', NULL, true)
+#4 /Users/Tacit/Sites/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#5 /Users/Tacit/Sites/MorPa/protected/controllers/SiteController.php(32): CController->render('index')
+#6 /Users/Tacit/Sites/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#7 /Users/Tacit/Sites/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /Users/Tacit/Sites/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /Users/Tacit/Sites/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /Users/Tacit/Sites/framework/web/CWebApplication.php(282): CController->run('index')
+#11 /Users/Tacit/Sites/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#12 /Users/Tacit/Sites/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#13 /Users/Tacit/Sites/MorPa/index.php(23): CApplication->run()
+#14 {main}
+REQUEST_URI=/MorPa/index.php?r=site/index
+HTTP_REFERER=http://localhost/MorPa/index.php?r=site/index
+---
+2016/01/20 18:27:50 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 1364 Field 'id' doesn't have a default value. The SQL statement executed was: 
+        INSERT INTO feed (feed.feedURL) VALUES ('https://geektimes.ru/rss/');
+    .
+in /Users/Tacit/Sites/MorPa/protected/views/site/index.php (32)
+in /Users/Tacit/Sites/MorPa/protected/controllers/SiteController.php (32)
+in /Users/Tacit/Sites/MorPa/index.php (23)
+2016/01/20 18:27:50 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[HY000]: General error: 1364 Field 'id' doesn't have a default value. The SQL statement executed was: 
+        INSERT INTO feed (feed.feedURL) VALUES ('https://geektimes.ru/rss/');
+    ' in /Users/Tacit/Sites/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /Users/Tacit/Sites/MorPa/protected/views/site/index.php(32): CDbCommand->execute()
+#1 /Users/Tacit/Sites/framework/web/CBaseController.php(126): require('/Users/Tacit/Si...')
+#2 /Users/Tacit/Sites/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/Tacit/Si...', NULL, true)
+#3 /Users/Tacit/Sites/framework/web/CController.php(869): CBaseController->renderFile('/Users/Tacit/Si...', NULL, true)
+#4 /Users/Tacit/Sites/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#5 /Users/Tacit/Sites/MorPa/protected/controllers/SiteController.php(32): CController->render('index')
+#6 /Users/Tacit/Sites/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#7 /Users/Tacit/Sites/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /Users/Tacit/Sites/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /Users/Tacit/Sites/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /Users/Tacit/Sites/framework/web/CWebApplication.php(282): CController->run('index')
+#11 /Users/Tacit/Sites/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#12 /Users/Tacit/Sites/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#13 /Users/Tacit/Sites/MorPa/index.php(23): CApplication->run()
+#14 {main}
+REQUEST_URI=/MorPa/index.php?r=site/index
+HTTP_REFERER=http://localhost/MorPa/index.php?r=site/index
+---
+2016/01/20 18:29:50 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 1364 Field 'id' doesn't have a default value. The SQL statement executed was: 
+        INSERT INTO feed (feed.feedURL) VALUES ('https://geektimes.ru/rss/');
+    .
+in /Users/Tacit/Sites/MorPa/protected/views/site/index.php (32)
+in /Users/Tacit/Sites/MorPa/protected/controllers/SiteController.php (32)
+in /Users/Tacit/Sites/MorPa/index.php (23)
+2016/01/20 18:29:50 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[HY000]: General error: 1364 Field 'id' doesn't have a default value. The SQL statement executed was: 
+        INSERT INTO feed (feed.feedURL) VALUES ('https://geektimes.ru/rss/');
+    ' in /Users/Tacit/Sites/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /Users/Tacit/Sites/MorPa/protected/views/site/index.php(32): CDbCommand->execute()
+#1 /Users/Tacit/Sites/framework/web/CBaseController.php(126): require('/Users/Tacit/Si...')
+#2 /Users/Tacit/Sites/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/Tacit/Si...', NULL, true)
+#3 /Users/Tacit/Sites/framework/web/CController.php(869): CBaseController->renderFile('/Users/Tacit/Si...', NULL, true)
+#4 /Users/Tacit/Sites/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#5 /Users/Tacit/Sites/MorPa/protected/controllers/SiteController.php(32): CController->render('index')
+#6 /Users/Tacit/Sites/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#7 /Users/Tacit/Sites/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /Users/Tacit/Sites/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /Users/Tacit/Sites/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /Users/Tacit/Sites/framework/web/CWebApplication.php(282): CController->run('index')
+#11 /Users/Tacit/Sites/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#12 /Users/Tacit/Sites/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#13 /Users/Tacit/Sites/MorPa/index.php(23): CApplication->run()
+#14 {main}
+REQUEST_URI=/MorPa/index.php?r=site/index
+HTTP_REFERER=http://localhost/MorPa/index.php?r=site/index
+---
+2016/01/20 18:51:35 [error] [php] file_get_contents(): Filename cannot be empty (/Users/Tacit/Sites/MorPa/protected/views/site/index.php:54)
+Stack trace:
+#0 /Users/Tacit/Sites/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#1 /Users/Tacit/Sites/framework/web/CController.php(869): SiteController->renderFile()
+#2 /Users/Tacit/Sites/framework/web/CController.php(782): SiteController->renderPartial()
+#3 /Users/Tacit/Sites/MorPa/protected/controllers/SiteController.php(32): SiteController->render()
+#4 /Users/Tacit/Sites/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#5 /Users/Tacit/Sites/framework/web/CController.php(308): CInlineAction->runWithParams()
+#6 /Users/Tacit/Sites/framework/web/CController.php(286): SiteController->runAction()
+#7 /Users/Tacit/Sites/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#8 /Users/Tacit/Sites/framework/web/CWebApplication.php(282): SiteController->run()
+#9 /Users/Tacit/Sites/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#10 /Users/Tacit/Sites/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#11 /Users/Tacit/Sites/MorPa/index.php(23): CWebApplication->run()
+REQUEST_URI=/MorPa/index.php
+in /Users/Tacit/Sites/MorPa/protected/views/site/index.php (54)
+in /Users/Tacit/Sites/MorPa/protected/controllers/SiteController.php (32)
+in /Users/Tacit/Sites/MorPa/index.php (23)
+2016/01/20 18:55:42 [error] [php] Invalid argument supplied for foreach() (/Users/Tacit/Sites/MorPa/protected/views/site/index.php:57)
+Stack trace:
+#0 /Users/Tacit/Sites/framework/web/CController.php(869): SiteController->renderFile()
+#1 /Users/Tacit/Sites/framework/web/CController.php(782): SiteController->renderPartial()
+#2 /Users/Tacit/Sites/MorPa/protected/controllers/SiteController.php(32): SiteController->render()
+#3 /Users/Tacit/Sites/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#4 /Users/Tacit/Sites/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /Users/Tacit/Sites/framework/web/CController.php(286): SiteController->runAction()
+#6 /Users/Tacit/Sites/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#7 /Users/Tacit/Sites/framework/web/CWebApplication.php(282): SiteController->run()
+#8 /Users/Tacit/Sites/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /Users/Tacit/Sites/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#10 /Users/Tacit/Sites/MorPa/index.php(23): CWebApplication->run()
+REQUEST_URI=/MorPa/index.php
+in /Users/Tacit/Sites/MorPa/protected/views/site/index.php (57)
+in /Users/Tacit/Sites/MorPa/protected/controllers/SiteController.php (32)
+in /Users/Tacit/Sites/MorPa/index.php (23)
+2016/01/20 18:55:56 [error] [php] Invalid argument supplied for foreach() (/Users/Tacit/Sites/MorPa/protected/views/site/index.php:57)
+Stack trace:
+#0 /Users/Tacit/Sites/framework/web/CController.php(869): SiteController->renderFile()
+#1 /Users/Tacit/Sites/framework/web/CController.php(782): SiteController->renderPartial()
+#2 /Users/Tacit/Sites/MorPa/protected/controllers/SiteController.php(32): SiteController->render()
+#3 /Users/Tacit/Sites/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#4 /Users/Tacit/Sites/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /Users/Tacit/Sites/framework/web/CController.php(286): SiteController->runAction()
+#6 /Users/Tacit/Sites/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#7 /Users/Tacit/Sites/framework/web/CWebApplication.php(282): SiteController->run()
+#8 /Users/Tacit/Sites/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /Users/Tacit/Sites/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#10 /Users/Tacit/Sites/MorPa/index.php(23): CWebApplication->run()
+REQUEST_URI=/MorPa/index.php
+in /Users/Tacit/Sites/MorPa/protected/views/site/index.php (57)
+in /Users/Tacit/Sites/MorPa/protected/controllers/SiteController.php (32)
+in /Users/Tacit/Sites/MorPa/index.php (23)
+2016/01/20 19:12:48 [error] [php] file_get_contents() expects parameter 1 to be a valid path, object given (/Users/Tacit/Sites/MorPa/protected/views/site/pages/about.php:18)
+Stack trace:
+#0 /Users/Tacit/Sites/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#1 /Users/Tacit/Sites/framework/web/CController.php(869): SiteController->renderFile()
+#2 /Users/Tacit/Sites/framework/web/CController.php(782): SiteController->renderPartial()
+#3 /Users/Tacit/Sites/framework/web/actions/CViewAction.php(140): SiteController->render()
+#4 /Users/Tacit/Sites/framework/web/actions/CAction.php(76): CViewAction->run()
+#5 /Users/Tacit/Sites/framework/web/CController.php(308): CViewAction->runWithParams()
+#6 /Users/Tacit/Sites/framework/web/CController.php(286): SiteController->runAction()
+#7 /Users/Tacit/Sites/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#8 /Users/Tacit/Sites/framework/web/CWebApplication.php(282): SiteController->run()
+#9 /Users/Tacit/Sites/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#10 /Users/Tacit/Sites/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#11 /Users/Tacit/Sites/MorPa/index.php(23): CWebApplication->run()
+REQUEST_URI=/MorPa/index.php?r=site/page&view=about
+in /Users/Tacit/Sites/MorPa/protected/views/site/pages/about.php (18)
+in /Users/Tacit/Sites/MorPa/index.php (23)
+2016/01/20 19:16:19 [error] [php] Invalid argument supplied for foreach() (/Users/Tacit/Sites/MorPa/protected/views/site/pages/about.php:21)
+Stack trace:
+#0 /Users/Tacit/Sites/framework/web/CController.php(869): SiteController->renderFile()
+#1 /Users/Tacit/Sites/framework/web/CController.php(782): SiteController->renderPartial()
+#2 /Users/Tacit/Sites/framework/web/actions/CViewAction.php(140): SiteController->render()
+#3 /Users/Tacit/Sites/framework/web/actions/CAction.php(76): CViewAction->run()
+#4 /Users/Tacit/Sites/framework/web/CController.php(308): CViewAction->runWithParams()
+#5 /Users/Tacit/Sites/framework/web/CController.php(286): SiteController->runAction()
+#6 /Users/Tacit/Sites/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#7 /Users/Tacit/Sites/framework/web/CWebApplication.php(282): SiteController->run()
+#8 /Users/Tacit/Sites/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /Users/Tacit/Sites/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#10 /Users/Tacit/Sites/MorPa/index.php(23): CWebApplication->run()
+REQUEST_URI=/MorPa/index.php?r=site/page&view=about
+in /Users/Tacit/Sites/MorPa/protected/views/site/pages/about.php (21)
+in /Users/Tacit/Sites/MorPa/index.php (23)
+2016/01/20 19:36:22 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'morpa.newsfeed' doesn't exist. The SQL statement executed was: 
+            INSERT INTO newsFeed (
+                    link,        title)
+            VALUES (
+                'http://feedproxy.google.com/~r/DevelopersOrgUa/~3/RjOYVQ_BP8g/', 'DOU Проектор: Yes Cart — e-commerce платформа');
+        .
+in /Users/Tacit/Sites/MorPa/protected/views/site/pages/about.php (29)
+in /Users/Tacit/Sites/MorPa/index.php (23)
+2016/01/20 19:36:22 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'morpa.newsfeed' doesn't exist. The SQL statement executed was: 
+            INSERT INTO newsFeed (
+                    link,        title)
+            VALUES (
+                'http://feedproxy.google.com/~r/DevelopersOrgUa/~3/RjOYVQ_BP8g/', 'DOU Проектор: Yes Cart — e-commerce платформа');
+        ' in /Users/Tacit/Sites/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /Users/Tacit/Sites/MorPa/protected/views/site/pages/about.php(29): CDbCommand->execute()
+#1 /Users/Tacit/Sites/framework/web/CBaseController.php(126): require('/Users/Tacit/Si...')
+#2 /Users/Tacit/Sites/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/Tacit/Si...', NULL, true)
+#3 /Users/Tacit/Sites/framework/web/CController.php(869): CBaseController->renderFile('/Users/Tacit/Si...', NULL, true)
+#4 /Users/Tacit/Sites/framework/web/CController.php(782): CController->renderPartial('pages/about', NULL, true)
+#5 /Users/Tacit/Sites/framework/web/actions/CViewAction.php(140): CController->render('pages/about')
+#6 /Users/Tacit/Sites/framework/web/actions/CAction.php(76): CViewAction->run()
+#7 /Users/Tacit/Sites/framework/web/CController.php(308): CAction->runWithParams(Array)
+#8 /Users/Tacit/Sites/framework/web/CController.php(286): CController->runAction(Object(CViewAction))
+#9 /Users/Tacit/Sites/framework/web/CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#10 /Users/Tacit/Sites/framework/web/CWebApplication.php(282): CController->run('page')
+#11 /Users/Tacit/Sites/framework/web/CWebApplication.php(141): CWebApplication->runController('site/page')
+#12 /Users/Tacit/Sites/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#13 /Users/Tacit/Sites/MorPa/index.php(23): CApplication->run()
+#14 {main}
+REQUEST_URI=/MorPa/index.php?r=site/page&view=about
+HTTP_REFERER=http://localhost/MorPa/index.php?r=site/index
+---
+2016/01/20 19:49:43 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 1366 Incorrect string value: '\xD0\x9F\xD1\x80\xD0\xBE...' for column 'title' at row 1. The SQL statement executed was: 
+            INSERT INTO newsEntry (
+                    link,        title, date)
+            VALUES (
+                'http://feedproxy.google.com/~r/DevelopersOrgUa/~3/RjOYVQ_BP8g/', 'DOU Проектор: Yes Cart — e-commerce платформа', '2016-01-20 13:27:55');
+        .
+in /Users/Tacit/Sites/MorPa/protected/views/site/pages/about.php (29)
+in /Users/Tacit/Sites/MorPa/index.php (23)
+2016/01/20 19:49:43 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[HY000]: General error: 1366 Incorrect string value: '\xD0\x9F\xD1\x80\xD0\xBE...' for column 'title' at row 1. The SQL statement executed was: 
+            INSERT INTO newsEntry (
+                    link,        title, date)
+            VALUES (
+                'http://feedproxy.google.com/~r/DevelopersOrgUa/~3/RjOYVQ_BP8g/', 'DOU Проектор: Yes Cart — e-commerce платформа', '2016-01-20 13:27:55');
+        ' in /Users/Tacit/Sites/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /Users/Tacit/Sites/MorPa/protected/views/site/pages/about.php(29): CDbCommand->execute()
+#1 /Users/Tacit/Sites/framework/web/CBaseController.php(126): require('/Users/Tacit/Si...')
+#2 /Users/Tacit/Sites/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/Tacit/Si...', NULL, true)
+#3 /Users/Tacit/Sites/framework/web/CController.php(869): CBaseController->renderFile('/Users/Tacit/Si...', NULL, true)
+#4 /Users/Tacit/Sites/framework/web/CController.php(782): CController->renderPartial('pages/about', NULL, true)
+#5 /Users/Tacit/Sites/framework/web/actions/CViewAction.php(140): CController->render('pages/about')
+#6 /Users/Tacit/Sites/framework/web/actions/CAction.php(76): CViewAction->run()
+#7 /Users/Tacit/Sites/framework/web/CController.php(308): CAction->runWithParams(Array)
+#8 /Users/Tacit/Sites/framework/web/CController.php(286): CController->runAction(Object(CViewAction))
+#9 /Users/Tacit/Sites/framework/web/CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#10 /Users/Tacit/Sites/framework/web/CWebApplication.php(282): CController->run('page')
+#11 /Users/Tacit/Sites/framework/web/CWebApplication.php(141): CWebApplication->runController('site/page')
+#12 /Users/Tacit/Sites/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#13 /Users/Tacit/Sites/MorPa/index.php(23): CApplication->run()
+#14 {main}
+REQUEST_URI=/MorPa/index.php?r=site/page&view=about
+HTTP_REFERER=http://localhost/MorPa/index.php?r=site/index
+---
+2016/01/20 19:50:05 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 1366 Incorrect string value: '\xD0\x9F\xD1\x80\xD0\xBE...' for column 'title' at row 1. The SQL statement executed was: 
+            INSERT INTO newsEntry (
+                    link,        title, date)
+            VALUES (
+                'http://feedproxy.google.com/~r/DevelopersOrgUa/~3/RjOYVQ_BP8g/', 'DOU Проектор: Yes Cart — e-commerce платформа', '2016-01-20 13:27:55');
+        .
+in /Users/Tacit/Sites/MorPa/protected/views/site/pages/about.php (29)
+in /Users/Tacit/Sites/MorPa/index.php (23)
+2016/01/20 19:50:05 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[HY000]: General error: 1366 Incorrect string value: '\xD0\x9F\xD1\x80\xD0\xBE...' for column 'title' at row 1. The SQL statement executed was: 
+            INSERT INTO newsEntry (
+                    link,        title, date)
+            VALUES (
+                'http://feedproxy.google.com/~r/DevelopersOrgUa/~3/RjOYVQ_BP8g/', 'DOU Проектор: Yes Cart — e-commerce платформа', '2016-01-20 13:27:55');
+        ' in /Users/Tacit/Sites/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /Users/Tacit/Sites/MorPa/protected/views/site/pages/about.php(29): CDbCommand->execute()
+#1 /Users/Tacit/Sites/framework/web/CBaseController.php(126): require('/Users/Tacit/Si...')
+#2 /Users/Tacit/Sites/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/Tacit/Si...', NULL, true)
+#3 /Users/Tacit/Sites/framework/web/CController.php(869): CBaseController->renderFile('/Users/Tacit/Si...', NULL, true)
+#4 /Users/Tacit/Sites/framework/web/CController.php(782): CController->renderPartial('pages/about', NULL, true)
+#5 /Users/Tacit/Sites/framework/web/actions/CViewAction.php(140): CController->render('pages/about')
+#6 /Users/Tacit/Sites/framework/web/actions/CAction.php(76): CViewAction->run()
+#7 /Users/Tacit/Sites/framework/web/CController.php(308): CAction->runWithParams(Array)
+#8 /Users/Tacit/Sites/framework/web/CController.php(286): CController->runAction(Object(CViewAction))
+#9 /Users/Tacit/Sites/framework/web/CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#10 /Users/Tacit/Sites/framework/web/CWebApplication.php(282): CController->run('page')
+#11 /Users/Tacit/Sites/framework/web/CWebApplication.php(141): CWebApplication->runController('site/page')
+#12 /Users/Tacit/Sites/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#13 /Users/Tacit/Sites/MorPa/index.php(23): CApplication->run()
+#14 {main}
+REQUEST_URI=/MorPa/index.php?r=site/page&view=about
+HTTP_REFERER=http://localhost/MorPa/index.php?r=site/index
+---
+2016/01/20 19:50:52 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 1366 Incorrect string value: '\xD0\x9F\xD1\x80\xD0\xBE...' for column 'title' at row 1. The SQL statement executed was: 
+            INSERT INTO newsEntry (
+                    link,        title, date)
+            VALUES (
+                'http://feedproxy.google.com/~r/DevelopersOrgUa/~3/RjOYVQ_BP8g/', 'DOU Проектор: Yes Cart — e-commerce платформа', '2016-01-20 13:27:55');
+        .
+in /Users/Tacit/Sites/MorPa/protected/views/site/pages/about.php (29)
+in /Users/Tacit/Sites/MorPa/index.php (23)
+2016/01/20 19:50:52 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[HY000]: General error: 1366 Incorrect string value: '\xD0\x9F\xD1\x80\xD0\xBE...' for column 'title' at row 1. The SQL statement executed was: 
+            INSERT INTO newsEntry (
+                    link,        title, date)
+            VALUES (
+                'http://feedproxy.google.com/~r/DevelopersOrgUa/~3/RjOYVQ_BP8g/', 'DOU Проектор: Yes Cart — e-commerce платформа', '2016-01-20 13:27:55');
+        ' in /Users/Tacit/Sites/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /Users/Tacit/Sites/MorPa/protected/views/site/pages/about.php(29): CDbCommand->execute()
+#1 /Users/Tacit/Sites/framework/web/CBaseController.php(126): require('/Users/Tacit/Si...')
+#2 /Users/Tacit/Sites/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/Tacit/Si...', NULL, true)
+#3 /Users/Tacit/Sites/framework/web/CController.php(869): CBaseController->renderFile('/Users/Tacit/Si...', NULL, true)
+#4 /Users/Tacit/Sites/framework/web/CController.php(782): CController->renderPartial('pages/about', NULL, true)
+#5 /Users/Tacit/Sites/framework/web/actions/CViewAction.php(140): CController->render('pages/about')
+#6 /Users/Tacit/Sites/framework/web/actions/CAction.php(76): CViewAction->run()
+#7 /Users/Tacit/Sites/framework/web/CController.php(308): CAction->runWithParams(Array)
+#8 /Users/Tacit/Sites/framework/web/CController.php(286): CController->runAction(Object(CViewAction))
+#9 /Users/Tacit/Sites/framework/web/CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#10 /Users/Tacit/Sites/framework/web/CWebApplication.php(282): CController->run('page')
+#11 /Users/Tacit/Sites/framework/web/CWebApplication.php(141): CWebApplication->runController('site/page')
+#12 /Users/Tacit/Sites/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#13 /Users/Tacit/Sites/MorPa/index.php(23): CApplication->run()
+#14 {main}
+REQUEST_URI=/MorPa/index.php?r=site/page&view=about
+HTTP_REFERER=http://localhost/MorPa/index.php?r=site/index
+---
+2016/01/20 19:56:53 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 1366 Incorrect string value: '\xD0\x9F\xD1\x80\xD0\xBE...' for column 'title' at row 1. The SQL statement executed was: 
+            INSERT INTO newsEntry (
+                    link,        title, date)
+            VALUES (
+                'http://feedproxy.google.com/~r/DevelopersOrgUa/~3/RjOYVQ_BP8g/', 'DOU Проектор: Yes Cart — e-commerce платформа', '2016-01-20 13:27:55');
+        .
+in /Users/Tacit/Sites/MorPa/protected/views/site/pages/about.php (29)
+in /Users/Tacit/Sites/MorPa/index.php (23)
+2016/01/20 19:56:53 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[HY000]: General error: 1366 Incorrect string value: '\xD0\x9F\xD1\x80\xD0\xBE...' for column 'title' at row 1. The SQL statement executed was: 
+            INSERT INTO newsEntry (
+                    link,        title, date)
+            VALUES (
+                'http://feedproxy.google.com/~r/DevelopersOrgUa/~3/RjOYVQ_BP8g/', 'DOU Проектор: Yes Cart — e-commerce платформа', '2016-01-20 13:27:55');
+        ' in /Users/Tacit/Sites/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /Users/Tacit/Sites/MorPa/protected/views/site/pages/about.php(29): CDbCommand->execute()
+#1 /Users/Tacit/Sites/framework/web/CBaseController.php(126): require('/Users/Tacit/Si...')
+#2 /Users/Tacit/Sites/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/Tacit/Si...', NULL, true)
+#3 /Users/Tacit/Sites/framework/web/CController.php(869): CBaseController->renderFile('/Users/Tacit/Si...', NULL, true)
+#4 /Users/Tacit/Sites/framework/web/CController.php(782): CController->renderPartial('pages/about', NULL, true)
+#5 /Users/Tacit/Sites/framework/web/actions/CViewAction.php(140): CController->render('pages/about')
+#6 /Users/Tacit/Sites/framework/web/actions/CAction.php(76): CViewAction->run()
+#7 /Users/Tacit/Sites/framework/web/CController.php(308): CAction->runWithParams(Array)
+#8 /Users/Tacit/Sites/framework/web/CController.php(286): CController->runAction(Object(CViewAction))
+#9 /Users/Tacit/Sites/framework/web/CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#10 /Users/Tacit/Sites/framework/web/CWebApplication.php(282): CController->run('page')
+#11 /Users/Tacit/Sites/framework/web/CWebApplication.php(141): CWebApplication->runController('site/page')
+#12 /Users/Tacit/Sites/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#13 /Users/Tacit/Sites/MorPa/index.php(23): CApplication->run()
+#14 {main}
+REQUEST_URI=/MorPa/index.php?r=site/page&view=about
+---
+2016/01/20 19:58:58 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 1366 Incorrect string value: '\xCF\xF0\xEE\xE5\xEA\xF2...' for column 'title' at row 1. The SQL statement executed was: 
+            INSERT INTO newsEntry (
+                    link,        title, date)
+            VALUES (
+                'http://feedproxy.google.com/~r/DevelopersOrgUa/~3/RjOYVQ_BP8g/', 'DOU ��������: Yes Cart � e-commerce ���������', '2016-01-20 13:27:55');
+        .
+in /Users/Tacit/Sites/MorPa/protected/views/site/pages/about.php (29)
+in /Users/Tacit/Sites/MorPa/index.php (23)
+2016/01/20 19:58:58 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[HY000]: General error: 1366 Incorrect string value: '\xCF\xF0\xEE\xE5\xEA\xF2...' for column 'title' at row 1. The SQL statement executed was: 
+            INSERT INTO newsEntry (
+                    link,        title, date)
+            VALUES (
+                'http://feedproxy.google.com/~r/DevelopersOrgUa/~3/RjOYVQ_BP8g/', 'DOU ��������: Yes Cart � e-commerce ���������', '2016-01-20 13:27:55');
+        ' in /Users/Tacit/Sites/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /Users/Tacit/Sites/MorPa/protected/views/site/pages/about.php(29): CDbCommand->execute()
+#1 /Users/Tacit/Sites/framework/web/CBaseController.php(126): require('/Users/Tacit/Si...')
+#2 /Users/Tacit/Sites/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/Tacit/Si...', NULL, true)
+#3 /Users/Tacit/Sites/framework/web/CController.php(869): CBaseController->renderFile('/Users/Tacit/Si...', NULL, true)
+#4 /Users/Tacit/Sites/framework/web/CController.php(782): CController->renderPartial('pages/about', NULL, true)
+#5 /Users/Tacit/Sites/framework/web/actions/CViewAction.php(140): CController->render('pages/about')
+#6 /Users/Tacit/Sites/framework/web/actions/CAction.php(76): CViewAction->run()
+#7 /Users/Tacit/Sites/framework/web/CController.php(308): CAction->runWithParams(Array)
+#8 /Users/Tacit/Sites/framework/web/CController.php(286): CController->runAction(Object(CViewAction))
+#9 /Users/Tacit/Sites/framework/web/CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#10 /Users/Tacit/Sites/framework/web/CWebApplication.php(282): CController->run('page')
+#11 /Users/Tacit/Sites/framework/web/CWebApplication.php(141): CWebApplication->runController('site/page')
+#12 /Users/Tacit/Sites/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#13 /Users/Tacit/Sites/MorPa/index.php(23): CApplication->run()
+#14 {main}
+REQUEST_URI=/MorPa/index.php?r=site/page&view=about
+---
+2016/01/20 19:59:52 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 1366 Incorrect string value: '\xCF\xF0\xEE\xE5\xEA\xF2...' for column 'title' at row 1. The SQL statement executed was: 
+            INSERT INTO newsEntry (
+                    link,        title, date)
+            VALUES (
+                'http://feedproxy.google.com/~r/DevelopersOrgUa/~3/RjOYVQ_BP8g/', 'DOU ��������: Yes Cart � e-commerce ���������', '2016-01-20 13:27:55');
+        .
+in /Users/Tacit/Sites/MorPa/protected/views/site/pages/about.php (29)
+in /Users/Tacit/Sites/MorPa/index.php (23)
+2016/01/20 19:59:52 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[HY000]: General error: 1366 Incorrect string value: '\xCF\xF0\xEE\xE5\xEA\xF2...' for column 'title' at row 1. The SQL statement executed was: 
+            INSERT INTO newsEntry (
+                    link,        title, date)
+            VALUES (
+                'http://feedproxy.google.com/~r/DevelopersOrgUa/~3/RjOYVQ_BP8g/', 'DOU ��������: Yes Cart � e-commerce ���������', '2016-01-20 13:27:55');
+        ' in /Users/Tacit/Sites/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /Users/Tacit/Sites/MorPa/protected/views/site/pages/about.php(29): CDbCommand->execute()
+#1 /Users/Tacit/Sites/framework/web/CBaseController.php(126): require('/Users/Tacit/Si...')
+#2 /Users/Tacit/Sites/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/Tacit/Si...', NULL, true)
+#3 /Users/Tacit/Sites/framework/web/CController.php(869): CBaseController->renderFile('/Users/Tacit/Si...', NULL, true)
+#4 /Users/Tacit/Sites/framework/web/CController.php(782): CController->renderPartial('pages/about', NULL, true)
+#5 /Users/Tacit/Sites/framework/web/actions/CViewAction.php(140): CController->render('pages/about')
+#6 /Users/Tacit/Sites/framework/web/actions/CAction.php(76): CViewAction->run()
+#7 /Users/Tacit/Sites/framework/web/CController.php(308): CAction->runWithParams(Array)
+#8 /Users/Tacit/Sites/framework/web/CController.php(286): CController->runAction(Object(CViewAction))
+#9 /Users/Tacit/Sites/framework/web/CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#10 /Users/Tacit/Sites/framework/web/CWebApplication.php(282): CController->run('page')
+#11 /Users/Tacit/Sites/framework/web/CWebApplication.php(141): CWebApplication->runController('site/page')
+#12 /Users/Tacit/Sites/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#13 /Users/Tacit/Sites/MorPa/index.php(23): CApplication->run()
+#14 {main}
+REQUEST_URI=/MorPa/index.php?r=site/page&view=about
+---
+2016/01/20 20:06:36 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 1366 Incorrect string value: '\xF0\xD2\xCF\xC5\xCB\xD4...' for column 'title' at row 1. The SQL statement executed was: 
+            INSERT INTO newsEntry (
+                    link,        title, date)
+            VALUES (
+                'http://feedproxy.google.com/~r/DevelopersOrgUa/~3/RjOYVQ_BP8g/', 'DOU ��������: Yes Cart ? e-commerce ���������', '2016-01-20 13:27:55');
+        .
+in /Users/Tacit/Sites/MorPa/protected/views/site/pages/about.php (29)
+in /Users/Tacit/Sites/MorPa/index.php (23)
+2016/01/20 20:06:36 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[HY000]: General error: 1366 Incorrect string value: '\xF0\xD2\xCF\xC5\xCB\xD4...' for column 'title' at row 1. The SQL statement executed was: 
+            INSERT INTO newsEntry (
+                    link,        title, date)
+            VALUES (
+                'http://feedproxy.google.com/~r/DevelopersOrgUa/~3/RjOYVQ_BP8g/', 'DOU ��������: Yes Cart ? e-commerce ���������', '2016-01-20 13:27:55');
+        ' in /Users/Tacit/Sites/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /Users/Tacit/Sites/MorPa/protected/views/site/pages/about.php(29): CDbCommand->execute()
+#1 /Users/Tacit/Sites/framework/web/CBaseController.php(126): require('/Users/Tacit/Si...')
+#2 /Users/Tacit/Sites/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/Tacit/Si...', NULL, true)
+#3 /Users/Tacit/Sites/framework/web/CController.php(869): CBaseController->renderFile('/Users/Tacit/Si...', NULL, true)
+#4 /Users/Tacit/Sites/framework/web/CController.php(782): CController->renderPartial('pages/about', NULL, true)
+#5 /Users/Tacit/Sites/framework/web/actions/CViewAction.php(140): CController->render('pages/about')
+#6 /Users/Tacit/Sites/framework/web/actions/CAction.php(76): CViewAction->run()
+#7 /Users/Tacit/Sites/framework/web/CController.php(308): CAction->runWithParams(Array)
+#8 /Users/Tacit/Sites/framework/web/CController.php(286): CController->runAction(Object(CViewAction))
+#9 /Users/Tacit/Sites/framework/web/CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#10 /Users/Tacit/Sites/framework/web/CWebApplication.php(282): CController->run('page')
+#11 /Users/Tacit/Sites/framework/web/CWebApplication.php(141): CWebApplication->runController('site/page')
+#12 /Users/Tacit/Sites/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#13 /Users/Tacit/Sites/MorPa/index.php(23): CApplication->run()
+#14 {main}
+REQUEST_URI=/MorPa/index.php?r=site/page&view=about
+---
+2016/01/20 20:07:57 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[22001]: String data, right truncated: 1406 Data too long for column 'title' at row 1. The SQL statement executed was: 
+            INSERT INTO newsEntry (
+                    link,        title, date)
+            VALUES (
+                'http://feedproxy.google.com/~r/DevelopersOrgUa/~3/RjOYVQ_BP8g/', 'DOU ????????: Yes Cart ? e-commerce ?????????', '2016-01-20 13:27:55');
+        .
+in /Users/Tacit/Sites/MorPa/protected/views/site/pages/about.php (29)
+in /Users/Tacit/Sites/MorPa/index.php (23)
+2016/01/20 20:07:57 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[22001]: String data, right truncated: 1406 Data too long for column 'title' at row 1. The SQL statement executed was: 
+            INSERT INTO newsEntry (
+                    link,        title, date)
+            VALUES (
+                'http://feedproxy.google.com/~r/DevelopersOrgUa/~3/RjOYVQ_BP8g/', 'DOU ????????: Yes Cart ? e-commerce ?????????', '2016-01-20 13:27:55');
+        ' in /Users/Tacit/Sites/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /Users/Tacit/Sites/MorPa/protected/views/site/pages/about.php(29): CDbCommand->execute()
+#1 /Users/Tacit/Sites/framework/web/CBaseController.php(126): require('/Users/Tacit/Si...')
+#2 /Users/Tacit/Sites/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/Tacit/Si...', NULL, true)
+#3 /Users/Tacit/Sites/framework/web/CController.php(869): CBaseController->renderFile('/Users/Tacit/Si...', NULL, true)
+#4 /Users/Tacit/Sites/framework/web/CController.php(782): CController->renderPartial('pages/about', NULL, true)
+#5 /Users/Tacit/Sites/framework/web/actions/CViewAction.php(140): CController->render('pages/about')
+#6 /Users/Tacit/Sites/framework/web/actions/CAction.php(76): CViewAction->run()
+#7 /Users/Tacit/Sites/framework/web/CController.php(308): CAction->runWithParams(Array)
+#8 /Users/Tacit/Sites/framework/web/CController.php(286): CController->runAction(Object(CViewAction))
+#9 /Users/Tacit/Sites/framework/web/CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#10 /Users/Tacit/Sites/framework/web/CWebApplication.php(282): CController->run('page')
+#11 /Users/Tacit/Sites/framework/web/CWebApplication.php(141): CWebApplication->runController('site/page')
+#12 /Users/Tacit/Sites/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#13 /Users/Tacit/Sites/MorPa/index.php(23): CApplication->run()
+#14 {main}
+REQUEST_URI=/MorPa/index.php?r=site/page&view=about
+---
+2016/01/20 20:08:07 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[22001]: String data, right truncated: 1406 Data too long for column 'title' at row 1. The SQL statement executed was: 
+            INSERT INTO newsEntry (
+                    link,        title, date)
+            VALUES (
+                'http://feedproxy.google.com/~r/DevelopersOrgUa/~3/RjOYVQ_BP8g/', 'DOU ????????: Yes Cart ? e-commerce ?????????', '2016-01-20 13:27:55');
+        .
+in /Users/Tacit/Sites/MorPa/protected/views/site/pages/about.php (29)
+in /Users/Tacit/Sites/MorPa/index.php (23)
+2016/01/20 20:08:07 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[22001]: String data, right truncated: 1406 Data too long for column 'title' at row 1. The SQL statement executed was: 
+            INSERT INTO newsEntry (
+                    link,        title, date)
+            VALUES (
+                'http://feedproxy.google.com/~r/DevelopersOrgUa/~3/RjOYVQ_BP8g/', 'DOU ????????: Yes Cart ? e-commerce ?????????', '2016-01-20 13:27:55');
+        ' in /Users/Tacit/Sites/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /Users/Tacit/Sites/MorPa/protected/views/site/pages/about.php(29): CDbCommand->execute()
+#1 /Users/Tacit/Sites/framework/web/CBaseController.php(126): require('/Users/Tacit/Si...')
+#2 /Users/Tacit/Sites/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/Tacit/Si...', NULL, true)
+#3 /Users/Tacit/Sites/framework/web/CController.php(869): CBaseController->renderFile('/Users/Tacit/Si...', NULL, true)
+#4 /Users/Tacit/Sites/framework/web/CController.php(782): CController->renderPartial('pages/about', NULL, true)
+#5 /Users/Tacit/Sites/framework/web/actions/CViewAction.php(140): CController->render('pages/about')
+#6 /Users/Tacit/Sites/framework/web/actions/CAction.php(76): CViewAction->run()
+#7 /Users/Tacit/Sites/framework/web/CController.php(308): CAction->runWithParams(Array)
+#8 /Users/Tacit/Sites/framework/web/CController.php(286): CController->runAction(Object(CViewAction))
+#9 /Users/Tacit/Sites/framework/web/CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#10 /Users/Tacit/Sites/framework/web/CWebApplication.php(282): CController->run('page')
+#11 /Users/Tacit/Sites/framework/web/CWebApplication.php(141): CWebApplication->runController('site/page')
+#12 /Users/Tacit/Sites/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#13 /Users/Tacit/Sites/MorPa/index.php(23): CApplication->run()
+#14 {main}
+REQUEST_URI=/MorPa/index.php?r=site/page&view=about
+---
+2016/01/20 20:09:05 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 1366 Incorrect string value: '\xCF\xF0\xEE\xE5\xEA\xF2...' for column 'title' at row 1. The SQL statement executed was: 
+            INSERT INTO newsEntry (
+                    link,        title, date)
+            VALUES (
+                'http://feedproxy.google.com/~r/DevelopersOrgUa/~3/RjOYVQ_BP8g/', 'DOU ��������: Yes Cart � e-commerce ���������', '2016-01-20 13:27:55');
+        .
+in /Users/Tacit/Sites/MorPa/protected/views/site/pages/about.php (29)
+in /Users/Tacit/Sites/MorPa/index.php (23)
+2016/01/20 20:09:05 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[HY000]: General error: 1366 Incorrect string value: '\xCF\xF0\xEE\xE5\xEA\xF2...' for column 'title' at row 1. The SQL statement executed was: 
+            INSERT INTO newsEntry (
+                    link,        title, date)
+            VALUES (
+                'http://feedproxy.google.com/~r/DevelopersOrgUa/~3/RjOYVQ_BP8g/', 'DOU ��������: Yes Cart � e-commerce ���������', '2016-01-20 13:27:55');
+        ' in /Users/Tacit/Sites/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /Users/Tacit/Sites/MorPa/protected/views/site/pages/about.php(29): CDbCommand->execute()
+#1 /Users/Tacit/Sites/framework/web/CBaseController.php(126): require('/Users/Tacit/Si...')
+#2 /Users/Tacit/Sites/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/Tacit/Si...', NULL, true)
+#3 /Users/Tacit/Sites/framework/web/CController.php(869): CBaseController->renderFile('/Users/Tacit/Si...', NULL, true)
+#4 /Users/Tacit/Sites/framework/web/CController.php(782): CController->renderPartial('pages/about', NULL, true)
+#5 /Users/Tacit/Sites/framework/web/actions/CViewAction.php(140): CController->render('pages/about')
+#6 /Users/Tacit/Sites/framework/web/actions/CAction.php(76): CViewAction->run()
+#7 /Users/Tacit/Sites/framework/web/CController.php(308): CAction->runWithParams(Array)
+#8 /Users/Tacit/Sites/framework/web/CController.php(286): CController->runAction(Object(CViewAction))
+#9 /Users/Tacit/Sites/framework/web/CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#10 /Users/Tacit/Sites/framework/web/CWebApplication.php(282): CController->run('page')
+#11 /Users/Tacit/Sites/framework/web/CWebApplication.php(141): CWebApplication->runController('site/page')
+#12 /Users/Tacit/Sites/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#13 /Users/Tacit/Sites/MorPa/index.php(23): CApplication->run()
+#14 {main}
+REQUEST_URI=/MorPa/index.php?r=site/page&view=about
+---
+2016/01/20 20:14:58 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[22001]: String data, right truncated: 1406 Data too long for column 'title' at row 1. The SQL statement executed was: 
+            INSERT INTO newsEntry (
+                    link,        title, date)
+            VALUES (
+                'http://feedproxy.google.com/~r/DevelopersOrgUa/~3/RjOYVQ_BP8g/', 'DOU Проектор: Yes Cart — e-commerce платформа', '2016-01-20 13:27:55');
+        .
+in /Users/Tacit/Sites/MorPa/protected/views/site/pages/about.php (29)
+in /Users/Tacit/Sites/MorPa/index.php (23)
+2016/01/20 20:14:58 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[22001]: String data, right truncated: 1406 Data too long for column 'title' at row 1. The SQL statement executed was: 
+            INSERT INTO newsEntry (
+                    link,        title, date)
+            VALUES (
+                'http://feedproxy.google.com/~r/DevelopersOrgUa/~3/RjOYVQ_BP8g/', 'DOU Проектор: Yes Cart — e-commerce платформа', '2016-01-20 13:27:55');
+        ' in /Users/Tacit/Sites/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /Users/Tacit/Sites/MorPa/protected/views/site/pages/about.php(29): CDbCommand->execute()
+#1 /Users/Tacit/Sites/framework/web/CBaseController.php(126): require('/Users/Tacit/Si...')
+#2 /Users/Tacit/Sites/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/Tacit/Si...', NULL, true)
+#3 /Users/Tacit/Sites/framework/web/CController.php(869): CBaseController->renderFile('/Users/Tacit/Si...', NULL, true)
+#4 /Users/Tacit/Sites/framework/web/CController.php(782): CController->renderPartial('pages/about', NULL, true)
+#5 /Users/Tacit/Sites/framework/web/actions/CViewAction.php(140): CController->render('pages/about')
+#6 /Users/Tacit/Sites/framework/web/actions/CAction.php(76): CViewAction->run()
+#7 /Users/Tacit/Sites/framework/web/CController.php(308): CAction->runWithParams(Array)
+#8 /Users/Tacit/Sites/framework/web/CController.php(286): CController->runAction(Object(CViewAction))
+#9 /Users/Tacit/Sites/framework/web/CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#10 /Users/Tacit/Sites/framework/web/CWebApplication.php(282): CController->run('page')
+#11 /Users/Tacit/Sites/framework/web/CWebApplication.php(141): CWebApplication->runController('site/page')
+#12 /Users/Tacit/Sites/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#13 /Users/Tacit/Sites/MorPa/index.php(23): CApplication->run()
+#14 {main}
+REQUEST_URI=/MorPa/index.php?r=site/page&view=about
+---
+2016/01/20 20:17:13 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[22001]: String data, right truncated: 1406 Data too long for column 'title' at row 1. The SQL statement executed was: 
+            INSERT INTO newsEntry (
+                    link,        title, date)
+            VALUES (
+                'http://feedproxy.google.com/~r/DevelopersOrgUa/~3/xV57jP8rE34/', 'ИТ как сфера работы: почему ее выбирают и каково в ней р', '2016-01-20 10:00:00');
+        .
+in /Users/Tacit/Sites/MorPa/protected/views/site/pages/about.php (29)
+in /Users/Tacit/Sites/MorPa/index.php (23)
+2016/01/20 20:17:13 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[22001]: String data, right truncated: 1406 Data too long for column 'title' at row 1. The SQL statement executed was: 
+            INSERT INTO newsEntry (
+                    link,        title, date)
+            VALUES (
+                'http://feedproxy.google.com/~r/DevelopersOrgUa/~3/xV57jP8rE34/', 'ИТ как сфера работы: почему ее выбирают и каково в ней р', '2016-01-20 10:00:00');
+        ' in /Users/Tacit/Sites/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /Users/Tacit/Sites/MorPa/protected/views/site/pages/about.php(29): CDbCommand->execute()
+#1 /Users/Tacit/Sites/framework/web/CBaseController.php(126): require('/Users/Tacit/Si...')
+#2 /Users/Tacit/Sites/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/Tacit/Si...', NULL, true)
+#3 /Users/Tacit/Sites/framework/web/CController.php(869): CBaseController->renderFile('/Users/Tacit/Si...', NULL, true)
+#4 /Users/Tacit/Sites/framework/web/CController.php(782): CController->renderPartial('pages/about', NULL, true)
+#5 /Users/Tacit/Sites/framework/web/actions/CViewAction.php(140): CController->render('pages/about')
+#6 /Users/Tacit/Sites/framework/web/actions/CAction.php(76): CViewAction->run()
+#7 /Users/Tacit/Sites/framework/web/CController.php(308): CAction->runWithParams(Array)
+#8 /Users/Tacit/Sites/framework/web/CController.php(286): CController->runAction(Object(CViewAction))
+#9 /Users/Tacit/Sites/framework/web/CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#10 /Users/Tacit/Sites/framework/web/CWebApplication.php(282): CController->run('page')
+#11 /Users/Tacit/Sites/framework/web/CWebApplication.php(141): CWebApplication->runController('site/page')
+#12 /Users/Tacit/Sites/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#13 /Users/Tacit/Sites/MorPa/index.php(23): CApplication->run()
+#14 {main}
+REQUEST_URI=/MorPa/index.php?r=site/page&view=about
+---
+2016/01/20 20:17:22 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 1366 Incorrect string value: '\xD0' for column 'title' at row 1. The SQL statement executed was: 
+            INSERT INTO newsEntry (
+                    link,        title, date)
+            VALUES (
+                'http://feedproxy.google.com/~r/DevelopersOrgUa/~3/gtl1QsLh3r0/', '25 января, Киев — Курс "DevOps д�', '2016-01-19 20:07:00');
+        .
+in /Users/Tacit/Sites/MorPa/protected/views/site/pages/about.php (29)
+in /Users/Tacit/Sites/MorPa/index.php (23)
+2016/01/20 20:17:22 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[HY000]: General error: 1366 Incorrect string value: '\xD0' for column 'title' at row 1. The SQL statement executed was: 
+            INSERT INTO newsEntry (
+                    link,        title, date)
+            VALUES (
+                'http://feedproxy.google.com/~r/DevelopersOrgUa/~3/gtl1QsLh3r0/', '25 января, Киев — Курс "DevOps д�', '2016-01-19 20:07:00');
+        ' in /Users/Tacit/Sites/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /Users/Tacit/Sites/MorPa/protected/views/site/pages/about.php(29): CDbCommand->execute()
+#1 /Users/Tacit/Sites/framework/web/CBaseController.php(126): require('/Users/Tacit/Si...')
+#2 /Users/Tacit/Sites/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/Tacit/Si...', NULL, true)
+#3 /Users/Tacit/Sites/framework/web/CController.php(869): CBaseController->renderFile('/Users/Tacit/Si...', NULL, true)
+#4 /Users/Tacit/Sites/framework/web/CController.php(782): CController->renderPartial('pages/about', NULL, true)
+#5 /Users/Tacit/Sites/framework/web/actions/CViewAction.php(140): CController->render('pages/about')
+#6 /Users/Tacit/Sites/framework/web/actions/CAction.php(76): CViewAction->run()
+#7 /Users/Tacit/Sites/framework/web/CController.php(308): CAction->runWithParams(Array)
+#8 /Users/Tacit/Sites/framework/web/CController.php(286): CController->runAction(Object(CViewAction))
+#9 /Users/Tacit/Sites/framework/web/CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#10 /Users/Tacit/Sites/framework/web/CWebApplication.php(282): CController->run('page')
+#11 /Users/Tacit/Sites/framework/web/CWebApplication.php(141): CWebApplication->runController('site/page')
+#12 /Users/Tacit/Sites/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#13 /Users/Tacit/Sites/MorPa/index.php(23): CApplication->run()
+#14 {main}
+REQUEST_URI=/MorPa/index.php?r=site/page&view=about
+---
+2016/01/20 20:18:11 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 1366 Incorrect string value: '\xD0' for column 'title' at row 1. The SQL statement executed was: 
+            INSERT INTO newsEntry (
+                    link,        title, date)
+            VALUES (
+                'http://feedproxy.google.com/~r/DevelopersOrgUa/~3/gtl1QsLh3r0/', '25 января, Киев — Курс "DevOps д�', '2016-01-19 20:07:00');
+        .
+in /Users/Tacit/Sites/MorPa/protected/views/site/pages/about.php (29)
+in /Users/Tacit/Sites/MorPa/index.php (23)
+2016/01/20 20:18:11 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[HY000]: General error: 1366 Incorrect string value: '\xD0' for column 'title' at row 1. The SQL statement executed was: 
+            INSERT INTO newsEntry (
+                    link,        title, date)
+            VALUES (
+                'http://feedproxy.google.com/~r/DevelopersOrgUa/~3/gtl1QsLh3r0/', '25 января, Киев — Курс "DevOps д�', '2016-01-19 20:07:00');
+        ' in /Users/Tacit/Sites/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /Users/Tacit/Sites/MorPa/protected/views/site/pages/about.php(29): CDbCommand->execute()
+#1 /Users/Tacit/Sites/framework/web/CBaseController.php(126): require('/Users/Tacit/Si...')
+#2 /Users/Tacit/Sites/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/Tacit/Si...', NULL, true)
+#3 /Users/Tacit/Sites/framework/web/CController.php(869): CBaseController->renderFile('/Users/Tacit/Si...', NULL, true)
+#4 /Users/Tacit/Sites/framework/web/CController.php(782): CController->renderPartial('pages/about', NULL, true)
+#5 /Users/Tacit/Sites/framework/web/actions/CViewAction.php(140): CController->render('pages/about')
+#6 /Users/Tacit/Sites/framework/web/actions/CAction.php(76): CViewAction->run()
+#7 /Users/Tacit/Sites/framework/web/CController.php(308): CAction->runWithParams(Array)
+#8 /Users/Tacit/Sites/framework/web/CController.php(286): CController->runAction(Object(CViewAction))
+#9 /Users/Tacit/Sites/framework/web/CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#10 /Users/Tacit/Sites/framework/web/CWebApplication.php(282): CController->run('page')
+#11 /Users/Tacit/Sites/framework/web/CWebApplication.php(141): CWebApplication->runController('site/page')
+#12 /Users/Tacit/Sites/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#13 /Users/Tacit/Sites/MorPa/index.php(23): CApplication->run()
+#14 {main}
+REQUEST_URI=/MorPa/index.php?r=site/page&view=about
+---
+2016/01/20 21:39:42 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 1366 Incorrect string value: '\xD0' for column 'title' at row 1. The SQL statement executed was: 
+            INSERT INTO newsEntry (
+                link,        
+                title, 
+                date)
+            VALUES (
+                'https://geektimes.ru/post/269482/', 
+                'Астрономы утверждают, что в Солнечной системе есть планета в 10 раз тяжелее Земли с периодом обращения в 15 000 л�', 
+                '2016-01-20 17:12:36');
+                
+                
+        .
+in /Users/Tacit/Sites/MorPa/protected/views/site/pages/about.php (38)
+in /Users/Tacit/Sites/MorPa/index.php (23)
+2016/01/20 21:39:42 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[HY000]: General error: 1366 Incorrect string value: '\xD0' for column 'title' at row 1. The SQL statement executed was: 
+            INSERT INTO newsEntry (
+                link,        
+                title, 
+                date)
+            VALUES (
+                'https://geektimes.ru/post/269482/', 
+                'Астрономы утверждают, что в Солнечной системе есть планета в 10 раз тяжелее Земли с периодом обращения в 15 000 л�', 
+                '2016-01-20 17:12:36');
+                
+                
+        ' in /Users/Tacit/Sites/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /Users/Tacit/Sites/MorPa/protected/views/site/pages/about.php(38): CDbCommand->execute()
+#1 /Users/Tacit/Sites/framework/web/CBaseController.php(126): require('/Users/Tacit/Si...')
+#2 /Users/Tacit/Sites/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/Tacit/Si...', NULL, true)
+#3 /Users/Tacit/Sites/framework/web/CController.php(869): CBaseController->renderFile('/Users/Tacit/Si...', NULL, true)
+#4 /Users/Tacit/Sites/framework/web/CController.php(782): CController->renderPartial('pages/about', NULL, true)
+#5 /Users/Tacit/Sites/framework/web/actions/CViewAction.php(140): CController->render('pages/about')
+#6 /Users/Tacit/Sites/framework/web/actions/CAction.php(76): CViewAction->run()
+#7 /Users/Tacit/Sites/framework/web/CController.php(308): CAction->runWithParams(Array)
+#8 /Users/Tacit/Sites/framework/web/CController.php(286): CController->runAction(Object(CViewAction))
+#9 /Users/Tacit/Sites/framework/web/CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#10 /Users/Tacit/Sites/framework/web/CWebApplication.php(282): CController->run('page')
+#11 /Users/Tacit/Sites/framework/web/CWebApplication.php(141): CWebApplication->runController('site/page')
+#12 /Users/Tacit/Sites/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#13 /Users/Tacit/Sites/MorPa/index.php(23): CApplication->run()
+#14 {main}
+REQUEST_URI=/MorPa/index.php?r=site/page&view=about
+---
+2016/01/20 21:42:28 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '\n            INSERT INTO newsEntry (\n                link,        \n          ' at line 1. The SQL statement executed was: \n            INSERT INTO newsEntry (\n                link,        \n                title, \n                date)\n            VALUES (\n                \'http://feedproxy.google.com/~r/DevelopersOrgUa/~3/RjOYVQ_BP8g/\', \n                \'DOU Проектор: Yes Cart — e-commerce платформа\', \n                \'2016-01-20 13:27:55\');\n                \n                \n        .
+in /Users/Tacit/Sites/MorPa/protected/views/site/pages/about.php (38)
+in /Users/Tacit/Sites/MorPa/index.php (23)
+2016/01/20 21:42:28 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '\n            INSERT INTO newsEntry (\n                link,        \n          ' at line 1. The SQL statement executed was: \n            INSERT INTO newsEntry (\n                link,        \n                title, \n                date)\n            VALUES (\n                \'http://feedproxy.google.com/~r/DevelopersOrgUa/~3/RjOYVQ_BP8g/\', \n                \'DOU Проектор: Yes Cart — e-commerce платформа\', \n                \'2016-01-20 13:27:55\');\n                \n                \n        ' in /Users/Tacit/Sites/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /Users/Tacit/Sites/MorPa/protected/views/site/pages/about.php(38): CDbCommand->execute()
+#1 /Users/Tacit/Sites/framework/web/CBaseController.php(126): require('/Users/Tacit/Si...')
+#2 /Users/Tacit/Sites/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/Tacit/Si...', NULL, true)
+#3 /Users/Tacit/Sites/framework/web/CController.php(869): CBaseController->renderFile('/Users/Tacit/Si...', NULL, true)
+#4 /Users/Tacit/Sites/framework/web/CController.php(782): CController->renderPartial('pages/about', NULL, true)
+#5 /Users/Tacit/Sites/framework/web/actions/CViewAction.php(140): CController->render('pages/about')
+#6 /Users/Tacit/Sites/framework/web/actions/CAction.php(76): CViewAction->run()
+#7 /Users/Tacit/Sites/framework/web/CController.php(308): CAction->runWithParams(Array)
+#8 /Users/Tacit/Sites/framework/web/CController.php(286): CController->runAction(Object(CViewAction))
+#9 /Users/Tacit/Sites/framework/web/CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#10 /Users/Tacit/Sites/framework/web/CWebApplication.php(282): CController->run('page')
+#11 /Users/Tacit/Sites/framework/web/CWebApplication.php(141): CWebApplication->runController('site/page')
+#12 /Users/Tacit/Sites/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#13 /Users/Tacit/Sites/MorPa/index.php(23): CApplication->run()
+#14 {main}
+REQUEST_URI=/MorPa/index.php?r=site/page&view=about
+---
+2016/01/20 21:47:44 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '://feedproxy.google.com/~r/DevelopersOrgUa/~3/RjOYVQ_BP8g/, DOU Проектор' at line 1. The SQL statement executed was: INSERT INTO newsEntry (link, title, date) VALUES ( http://feedproxy.google.com/~r/DevelopersOrgUa/~3/RjOYVQ_BP8g/, DOU Проектор: Yes Cart — e-commerce платформа, 2016-01-20 13:27:55);.
+in /Users/Tacit/Sites/MorPa/protected/views/site/pages/about.php (32)
+in /Users/Tacit/Sites/MorPa/index.php (23)
+2016/01/20 21:47:44 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '://feedproxy.google.com/~r/DevelopersOrgUa/~3/RjOYVQ_BP8g/, DOU Проектор' at line 1. The SQL statement executed was: INSERT INTO newsEntry (link, title, date) VALUES ( http://feedproxy.google.com/~r/DevelopersOrgUa/~3/RjOYVQ_BP8g/, DOU Проектор: Yes Cart — e-commerce платформа, 2016-01-20 13:27:55);' in /Users/Tacit/Sites/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /Users/Tacit/Sites/MorPa/protected/views/site/pages/about.php(32): CDbCommand->execute()
+#1 /Users/Tacit/Sites/framework/web/CBaseController.php(126): require('/Users/Tacit/Si...')
+#2 /Users/Tacit/Sites/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/Tacit/Si...', NULL, true)
+#3 /Users/Tacit/Sites/framework/web/CController.php(869): CBaseController->renderFile('/Users/Tacit/Si...', NULL, true)
+#4 /Users/Tacit/Sites/framework/web/CController.php(782): CController->renderPartial('pages/about', NULL, true)
+#5 /Users/Tacit/Sites/framework/web/actions/CViewAction.php(140): CController->render('pages/about')
+#6 /Users/Tacit/Sites/framework/web/actions/CAction.php(76): CViewAction->run()
+#7 /Users/Tacit/Sites/framework/web/CController.php(308): CAction->runWithParams(Array)
+#8 /Users/Tacit/Sites/framework/web/CController.php(286): CController->runAction(Object(CViewAction))
+#9 /Users/Tacit/Sites/framework/web/CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#10 /Users/Tacit/Sites/framework/web/CWebApplication.php(282): CController->run('page')
+#11 /Users/Tacit/Sites/framework/web/CWebApplication.php(141): CWebApplication->runController('site/page')
+#12 /Users/Tacit/Sites/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#13 /Users/Tacit/Sites/MorPa/index.php(23): CApplication->run()
+#14 {main}
+REQUEST_URI=/MorPa/index.php?r=site/page&view=about
+---
+2016/01/20 21:49:29 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '\'http://feedproxy.google.com/~r/DevelopersOrgUa/~3/RjOYVQ_BP8g/\', \'DOU Про' at line 1. The SQL statement executed was: INSERT INTO newsEntry (link, title, date) VALUES ( \'http://feedproxy.google.com/~r/DevelopersOrgUa/~3/RjOYVQ_BP8g/\', \'DOU Проектор: Yes Cart — e-commerce платформа\', \'2016-01-20 13:27:55\');.
+in /Users/Tacit/Sites/MorPa/protected/views/site/pages/about.php (32)
+in /Users/Tacit/Sites/MorPa/index.php (23)
+2016/01/20 21:49:29 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '\'http://feedproxy.google.com/~r/DevelopersOrgUa/~3/RjOYVQ_BP8g/\', \'DOU Про' at line 1. The SQL statement executed was: INSERT INTO newsEntry (link, title, date) VALUES ( \'http://feedproxy.google.com/~r/DevelopersOrgUa/~3/RjOYVQ_BP8g/\', \'DOU Проектор: Yes Cart — e-commerce платформа\', \'2016-01-20 13:27:55\');' in /Users/Tacit/Sites/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /Users/Tacit/Sites/MorPa/protected/views/site/pages/about.php(32): CDbCommand->execute()
+#1 /Users/Tacit/Sites/framework/web/CBaseController.php(126): require('/Users/Tacit/Si...')
+#2 /Users/Tacit/Sites/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/Tacit/Si...', NULL, true)
+#3 /Users/Tacit/Sites/framework/web/CController.php(869): CBaseController->renderFile('/Users/Tacit/Si...', NULL, true)
+#4 /Users/Tacit/Sites/framework/web/CController.php(782): CController->renderPartial('pages/about', NULL, true)
+#5 /Users/Tacit/Sites/framework/web/actions/CViewAction.php(140): CController->render('pages/about')
+#6 /Users/Tacit/Sites/framework/web/actions/CAction.php(76): CViewAction->run()
+#7 /Users/Tacit/Sites/framework/web/CController.php(308): CAction->runWithParams(Array)
+#8 /Users/Tacit/Sites/framework/web/CController.php(286): CController->runAction(Object(CViewAction))
+#9 /Users/Tacit/Sites/framework/web/CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#10 /Users/Tacit/Sites/framework/web/CWebApplication.php(282): CController->run('page')
+#11 /Users/Tacit/Sites/framework/web/CWebApplication.php(141): CWebApplication->runController('site/page')
+#12 /Users/Tacit/Sites/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#13 /Users/Tacit/Sites/MorPa/index.php(23): CApplication->run()
+#14 {main}
+REQUEST_URI=/MorPa/index.php?r=site/page&view=about
+---
+2016/01/20 21:54:11 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '\'http://feedproxy.google.com/~r/DevelopersOrgUa/~3/RjOYVQ_BP8g/\', \'DOU Про' at line 1. The SQL statement executed was: INSERT INTO newsEntry (link, title, date) VALUES ( \'http://feedproxy.google.com/~r/DevelopersOrgUa/~3/RjOYVQ_BP8g/\', \'DOU Проектор: Yes Cart — e-commerce платформа\', \'2016-01-20 13:27:55\');.
+in /Users/Tacit/Sites/MorPa/protected/views/site/pages/about.php (32)
+in /Users/Tacit/Sites/MorPa/index.php (23)
+2016/01/20 21:54:11 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '\'http://feedproxy.google.com/~r/DevelopersOrgUa/~3/RjOYVQ_BP8g/\', \'DOU Про' at line 1. The SQL statement executed was: INSERT INTO newsEntry (link, title, date) VALUES ( \'http://feedproxy.google.com/~r/DevelopersOrgUa/~3/RjOYVQ_BP8g/\', \'DOU Проектор: Yes Cart — e-commerce платформа\', \'2016-01-20 13:27:55\');' in /Users/Tacit/Sites/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /Users/Tacit/Sites/MorPa/protected/views/site/pages/about.php(32): CDbCommand->execute()
+#1 /Users/Tacit/Sites/framework/web/CBaseController.php(126): require('/Users/Tacit/Si...')
+#2 /Users/Tacit/Sites/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/Tacit/Si...', NULL, true)
+#3 /Users/Tacit/Sites/framework/web/CController.php(869): CBaseController->renderFile('/Users/Tacit/Si...', NULL, true)
+#4 /Users/Tacit/Sites/framework/web/CController.php(782): CController->renderPartial('pages/about', NULL, true)
+#5 /Users/Tacit/Sites/framework/web/actions/CViewAction.php(140): CController->render('pages/about')
+#6 /Users/Tacit/Sites/framework/web/actions/CAction.php(76): CViewAction->run()
+#7 /Users/Tacit/Sites/framework/web/CController.php(308): CAction->runWithParams(Array)
+#8 /Users/Tacit/Sites/framework/web/CController.php(286): CController->runAction(Object(CViewAction))
+#9 /Users/Tacit/Sites/framework/web/CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#10 /Users/Tacit/Sites/framework/web/CWebApplication.php(282): CController->run('page')
+#11 /Users/Tacit/Sites/framework/web/CWebApplication.php(141): CWebApplication->runController('site/page')
+#12 /Users/Tacit/Sites/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#13 /Users/Tacit/Sites/MorPa/index.php(23): CApplication->run()
+#14 {main}
+REQUEST_URI=/MorPa/index.php?r=site/page&view=about
+---
+2016/01/20 22:01:41 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 1366 Incorrect string value: '\xD0' for column 'title' at row 1. The SQL statement executed was: INSERT INTO newsEntry (link, title, date) VALUES ( 'https://geektimes.ru/post/269482/', 'Астрономы утверждают, что в Солнечной системе есть планета в 10 раз тяжелее Земли с периодом обращения в 15 000 л�', '2016-01-20 17:12:36');.
+in /Users/Tacit/Sites/MorPa/protected/views/site/pages/about.php (32)
+in /Users/Tacit/Sites/MorPa/index.php (23)
+2016/01/20 22:01:41 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[HY000]: General error: 1366 Incorrect string value: '\xD0' for column 'title' at row 1. The SQL statement executed was: INSERT INTO newsEntry (link, title, date) VALUES ( 'https://geektimes.ru/post/269482/', 'Астрономы утверждают, что в Солнечной системе есть планета в 10 раз тяжелее Земли с периодом обращения в 15 000 л�', '2016-01-20 17:12:36');' in /Users/Tacit/Sites/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /Users/Tacit/Sites/MorPa/protected/views/site/pages/about.php(32): CDbCommand->execute()
+#1 /Users/Tacit/Sites/framework/web/CBaseController.php(126): require('/Users/Tacit/Si...')
+#2 /Users/Tacit/Sites/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/Tacit/Si...', NULL, true)
+#3 /Users/Tacit/Sites/framework/web/CController.php(869): CBaseController->renderFile('/Users/Tacit/Si...', NULL, true)
+#4 /Users/Tacit/Sites/framework/web/CController.php(782): CController->renderPartial('pages/about', NULL, true)
+#5 /Users/Tacit/Sites/framework/web/actions/CViewAction.php(140): CController->render('pages/about')
+#6 /Users/Tacit/Sites/framework/web/actions/CAction.php(76): CViewAction->run()
+#7 /Users/Tacit/Sites/framework/web/CController.php(308): CAction->runWithParams(Array)
+#8 /Users/Tacit/Sites/framework/web/CController.php(286): CController->runAction(Object(CViewAction))
+#9 /Users/Tacit/Sites/framework/web/CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#10 /Users/Tacit/Sites/framework/web/CWebApplication.php(282): CController->run('page')
+#11 /Users/Tacit/Sites/framework/web/CWebApplication.php(141): CWebApplication->runController('site/page')
+#12 /Users/Tacit/Sites/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#13 /Users/Tacit/Sites/MorPa/index.php(23): CApplication->run()
+#14 {main}
+REQUEST_URI=/MorPa/index.php?r=site/page&view=about
+---
+2016/01/20 22:03:24 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 1366 Incorrect string value: '\xD0' for column 'title' at row 1. The SQL statement executed was: INSERT INTO newsEntry (link, title, date) VALUES ( 'https://geektimes.ru/post/269482/', 'Астрономы утверждают, что в Солнечной системе есть планета в 10 раз тяжелее Земли с периодом обращения в 15 000 л�', '2016-01-20 17:12:36');.
+in /Users/Tacit/Sites/MorPa/protected/views/site/pages/about.php (32)
+in /Users/Tacit/Sites/MorPa/index.php (23)
+2016/01/20 22:03:24 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[HY000]: General error: 1366 Incorrect string value: '\xD0' for column 'title' at row 1. The SQL statement executed was: INSERT INTO newsEntry (link, title, date) VALUES ( 'https://geektimes.ru/post/269482/', 'Астрономы утверждают, что в Солнечной системе есть планета в 10 раз тяжелее Земли с периодом обращения в 15 000 л�', '2016-01-20 17:12:36');' in /Users/Tacit/Sites/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /Users/Tacit/Sites/MorPa/protected/views/site/pages/about.php(32): CDbCommand->execute()
+#1 /Users/Tacit/Sites/framework/web/CBaseController.php(126): require('/Users/Tacit/Si...')
+#2 /Users/Tacit/Sites/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/Tacit/Si...', NULL, true)
+#3 /Users/Tacit/Sites/framework/web/CController.php(869): CBaseController->renderFile('/Users/Tacit/Si...', NULL, true)
+#4 /Users/Tacit/Sites/framework/web/CController.php(782): CController->renderPartial('pages/about', NULL, true)
+#5 /Users/Tacit/Sites/framework/web/actions/CViewAction.php(140): CController->render('pages/about')
+#6 /Users/Tacit/Sites/framework/web/actions/CAction.php(76): CViewAction->run()
+#7 /Users/Tacit/Sites/framework/web/CController.php(308): CAction->runWithParams(Array)
+#8 /Users/Tacit/Sites/framework/web/CController.php(286): CController->runAction(Object(CViewAction))
+#9 /Users/Tacit/Sites/framework/web/CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#10 /Users/Tacit/Sites/framework/web/CWebApplication.php(282): CController->run('page')
+#11 /Users/Tacit/Sites/framework/web/CWebApplication.php(141): CWebApplication->runController('site/page')
+#12 /Users/Tacit/Sites/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#13 /Users/Tacit/Sites/MorPa/index.php(23): CApplication->run()
+#14 {main}
+REQUEST_URI=/MorPa/index.php?r=site/page&view=about
+---
+2016/01/20 22:10:34 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 1366 Incorrect string value: '\xD0' for column 'title' at row 1. The SQL statement executed was: INSERT INTO newsEntry (link, title, date) VALUES ( 'https://geektimes.ru/post/269482/', 'Астрономы утверждают, что в Солнечной системе есть планета в 10 раз тяжелее Земли с периодом обращения в 15 000 л�', '2016-01-20 17:12:36');.
+in /Users/Tacit/Sites/MorPa/protected/views/site/pages/about.php (32)
+in /Users/Tacit/Sites/MorPa/index.php (23)
+2016/01/20 22:10:34 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[HY000]: General error: 1366 Incorrect string value: '\xD0' for column 'title' at row 1. The SQL statement executed was: INSERT INTO newsEntry (link, title, date) VALUES ( 'https://geektimes.ru/post/269482/', 'Астрономы утверждают, что в Солнечной системе есть планета в 10 раз тяжелее Земли с периодом обращения в 15 000 л�', '2016-01-20 17:12:36');' in /Users/Tacit/Sites/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /Users/Tacit/Sites/MorPa/protected/views/site/pages/about.php(32): CDbCommand->execute()
+#1 /Users/Tacit/Sites/framework/web/CBaseController.php(126): require('/Users/Tacit/Si...')
+#2 /Users/Tacit/Sites/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/Tacit/Si...', NULL, true)
+#3 /Users/Tacit/Sites/framework/web/CController.php(869): CBaseController->renderFile('/Users/Tacit/Si...', NULL, true)
+#4 /Users/Tacit/Sites/framework/web/CController.php(782): CController->renderPartial('pages/about', NULL, true)
+#5 /Users/Tacit/Sites/framework/web/actions/CViewAction.php(140): CController->render('pages/about')
+#6 /Users/Tacit/Sites/framework/web/actions/CAction.php(76): CViewAction->run()
+#7 /Users/Tacit/Sites/framework/web/CController.php(308): CAction->runWithParams(Array)
+#8 /Users/Tacit/Sites/framework/web/CController.php(286): CController->runAction(Object(CViewAction))
+#9 /Users/Tacit/Sites/framework/web/CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#10 /Users/Tacit/Sites/framework/web/CWebApplication.php(282): CController->run('page')
+#11 /Users/Tacit/Sites/framework/web/CWebApplication.php(141): CWebApplication->runController('site/page')
+#12 /Users/Tacit/Sites/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#13 /Users/Tacit/Sites/MorPa/index.php(23): CApplication->run()
+#14 {main}
+REQUEST_URI=/MorPa/index.php?r=site/page&view=about
+---
+2016/01/20 22:30:00 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 1366 Incorrect string value: '\xD0' for column 'title' at row 1. The SQL statement executed was: INSERT INTO newsEntry (link, title, date) VALUES ( 'https://geektimes.ru/post/269482/', 'Астрономы утверждают, что в Солнечной системе есть планета в 10 раз тяжелее Земли с периодом обращения в 15 000 л�', '2016-01-20 17:12:36');.
+in /Users/Tacit/Sites/MorPa/protected/views/site/index.php (80)
+in /Users/Tacit/Sites/MorPa/protected/controllers/SiteController.php (32)
+in /Users/Tacit/Sites/MorPa/index.php (23)
+2016/01/20 22:30:00 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[HY000]: General error: 1366 Incorrect string value: '\xD0' for column 'title' at row 1. The SQL statement executed was: INSERT INTO newsEntry (link, title, date) VALUES ( 'https://geektimes.ru/post/269482/', 'Астрономы утверждают, что в Солнечной системе есть планета в 10 раз тяжелее Земли с периодом обращения в 15 000 л�', '2016-01-20 17:12:36');' in /Users/Tacit/Sites/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /Users/Tacit/Sites/MorPa/protected/views/site/index.php(80): CDbCommand->execute()
+#1 /Users/Tacit/Sites/framework/web/CBaseController.php(126): require('/Users/Tacit/Si...')
+#2 /Users/Tacit/Sites/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/Tacit/Si...', NULL, true)
+#3 /Users/Tacit/Sites/framework/web/CController.php(869): CBaseController->renderFile('/Users/Tacit/Si...', NULL, true)
+#4 /Users/Tacit/Sites/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#5 /Users/Tacit/Sites/MorPa/protected/controllers/SiteController.php(32): CController->render('index')
+#6 /Users/Tacit/Sites/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#7 /Users/Tacit/Sites/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /Users/Tacit/Sites/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /Users/Tacit/Sites/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /Users/Tacit/Sites/framework/web/CWebApplication.php(282): CController->run('index')
+#11 /Users/Tacit/Sites/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#12 /Users/Tacit/Sites/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#13 /Users/Tacit/Sites/MorPa/index.php(23): CApplication->run()
+#14 {main}
+REQUEST_URI=/MorPa/index.php?r=site/index
+HTTP_REFERER=http://localhost/MorPa/index.php?r=site/index
+---
+2016/01/20 22:31:45 [error] [php] file_get_contents(): Filename cannot be empty (/Users/Tacit/Sites/MorPa/protected/views/site/index.php:63)
+Stack trace:
+#0 /Users/Tacit/Sites/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#1 /Users/Tacit/Sites/framework/web/CController.php(869): SiteController->renderFile()
+#2 /Users/Tacit/Sites/framework/web/CController.php(782): SiteController->renderPartial()
+#3 /Users/Tacit/Sites/MorPa/protected/controllers/SiteController.php(32): SiteController->render()
+#4 /Users/Tacit/Sites/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#5 /Users/Tacit/Sites/framework/web/CController.php(308): CInlineAction->runWithParams()
+#6 /Users/Tacit/Sites/framework/web/CController.php(286): SiteController->runAction()
+#7 /Users/Tacit/Sites/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#8 /Users/Tacit/Sites/framework/web/CWebApplication.php(282): SiteController->run()
+#9 /Users/Tacit/Sites/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#10 /Users/Tacit/Sites/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#11 /Users/Tacit/Sites/MorPa/index.php(23): CWebApplication->run()
+REQUEST_URI=/MorPa/index.php?r=site/index
+in /Users/Tacit/Sites/MorPa/protected/views/site/index.php (63)
+in /Users/Tacit/Sites/MorPa/protected/controllers/SiteController.php (32)
+in /Users/Tacit/Sites/MorPa/index.php (23)
+2016/01/20 22:33:11 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 1366 Incorrect string value: '\xD0' for column 'title' at row 1. The SQL statement executed was: INSERT INTO newsEntry (link, title, date) VALUES ( 'https://geektimes.ru/post/269482/', 'Астрономы утверждают, что в Солнечной системе есть планета в 10 раз тяжелее Земли с периодом обращения в 15 000 л�', '2016-01-20 17:12:36');.
+in /Users/Tacit/Sites/MorPa/protected/views/site/index.php (80)
+in /Users/Tacit/Sites/MorPa/protected/controllers/SiteController.php (32)
+in /Users/Tacit/Sites/MorPa/index.php (23)
+2016/01/20 22:33:11 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[HY000]: General error: 1366 Incorrect string value: '\xD0' for column 'title' at row 1. The SQL statement executed was: INSERT INTO newsEntry (link, title, date) VALUES ( 'https://geektimes.ru/post/269482/', 'Астрономы утверждают, что в Солнечной системе есть планета в 10 раз тяжелее Земли с периодом обращения в 15 000 л�', '2016-01-20 17:12:36');' in /Users/Tacit/Sites/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /Users/Tacit/Sites/MorPa/protected/views/site/index.php(80): CDbCommand->execute()
+#1 /Users/Tacit/Sites/framework/web/CBaseController.php(126): require('/Users/Tacit/Si...')
+#2 /Users/Tacit/Sites/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/Tacit/Si...', NULL, true)
+#3 /Users/Tacit/Sites/framework/web/CController.php(869): CBaseController->renderFile('/Users/Tacit/Si...', NULL, true)
+#4 /Users/Tacit/Sites/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#5 /Users/Tacit/Sites/MorPa/protected/controllers/SiteController.php(32): CController->render('index')
+#6 /Users/Tacit/Sites/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#7 /Users/Tacit/Sites/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /Users/Tacit/Sites/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /Users/Tacit/Sites/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /Users/Tacit/Sites/framework/web/CWebApplication.php(282): CController->run('index')
+#11 /Users/Tacit/Sites/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#12 /Users/Tacit/Sites/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#13 /Users/Tacit/Sites/MorPa/index.php(23): CApplication->run()
+#14 {main}
+REQUEST_URI=/MorPa/index.php?r=site/index
+HTTP_REFERER=http://localhost/MorPa/index.php?r=site/index
+---
+2016/01/20 22:53:24 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'feedURL' in 'group statement'. The SQL statement executed was: 
+            DELETE newsEntry 
+            FROM newsEntry
+            LEFT OUTER JOIN (
+               SELECT MIN(id) as id, title
+               FROM newsEntry 
+               GROUP BY feedURL
+            ) as KeepRows ON
+               newsEntry.id = KeepRows.id
+            WHERE
+               KeepRows.id IS NULL
+        .
+in /Users/Tacit/Sites/MorPa/protected/models/NewsEntry.php (113)
+in /Users/Tacit/Sites/MorPa/protected/views/site/pages/about.php (27)
+in /Users/Tacit/Sites/MorPa/index.php (23)
+2016/01/20 22:53:24 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'feedURL' in 'group statement'. The SQL statement executed was: 
+            DELETE newsEntry 
+            FROM newsEntry
+            LEFT OUTER JOIN (
+               SELECT MIN(id) as id, title
+               FROM newsEntry 
+               GROUP BY feedURL
+            ) as KeepRows ON
+               newsEntry.id = KeepRows.id
+            WHERE
+               KeepRows.id IS NULL
+        ' in /Users/Tacit/Sites/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /Users/Tacit/Sites/MorPa/protected/models/NewsEntry.php(113): CDbCommand->execute()
+#1 /Users/Tacit/Sites/MorPa/protected/views/site/pages/about.php(27): NewsEntry::feedToList(NULL)
+#2 /Users/Tacit/Sites/framework/web/CBaseController.php(126): require('/Users/Tacit/Si...')
+#3 /Users/Tacit/Sites/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/Tacit/Si...', NULL, true)
+#4 /Users/Tacit/Sites/framework/web/CController.php(869): CBaseController->renderFile('/Users/Tacit/Si...', NULL, true)
+#5 /Users/Tacit/Sites/framework/web/CController.php(782): CController->renderPartial('pages/about', NULL, true)
+#6 /Users/Tacit/Sites/framework/web/actions/CViewAction.php(140): CController->render('pages/about')
+#7 /Users/Tacit/Sites/framework/web/actions/CAction.php(76): CViewAction->run()
+#8 /Users/Tacit/Sites/framework/web/CController.php(308): CAction->runWithParams(Array)
+#9 /Users/Tacit/Sites/framework/web/CController.php(286): CController->runAction(Object(CViewAction))
+#10 /Users/Tacit/Sites/framework/web/CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#11 /Users/Tacit/Sites/framework/web/CWebApplication.php(282): CController->run('page')
+#12 /Users/Tacit/Sites/framework/web/CWebApplication.php(141): CWebApplication->runController('site/page')
+#13 /Users/Tacit/Sites/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#14 /Users/Tacit/Sites/MorPa/index.php(23): CApplication->run()
+#15 {main}
+REQUEST_URI=/MorPa/index.php?r=site/page&view=about
+HTTP_REFERER=http://localhost/MorPa/index.php?r=site/page&view=about
+---
+2016/01/20 22:53:43 [error] [php] file_get_contents(): Filename cannot be empty (/Users/Tacit/Sites/MorPa/protected/models/NewsEntry.php:117)
+Stack trace:
+#0 /Users/Tacit/Sites/framework/web/CBaseController.php(126): require()
+#1 /Users/Tacit/Sites/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#2 /Users/Tacit/Sites/framework/web/CController.php(869): SiteController->renderFile()
+#3 /Users/Tacit/Sites/framework/web/CController.php(782): SiteController->renderPartial()
+#4 /Users/Tacit/Sites/framework/web/actions/CViewAction.php(140): SiteController->render()
+#5 /Users/Tacit/Sites/framework/web/actions/CAction.php(76): CViewAction->run()
+#6 /Users/Tacit/Sites/framework/web/CController.php(308): CViewAction->runWithParams()
+#7 /Users/Tacit/Sites/framework/web/CController.php(286): SiteController->runAction()
+#8 /Users/Tacit/Sites/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#9 /Users/Tacit/Sites/framework/web/CWebApplication.php(282): SiteController->run()
+#10 /Users/Tacit/Sites/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#11 /Users/Tacit/Sites/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#12 /Users/Tacit/Sites/MorPa/index.php(23): CWebApplication->run()
+REQUEST_URI=/MorPa/index.php?r=site/page&view=about
+in /Users/Tacit/Sites/MorPa/protected/models/NewsEntry.php (117)
+in /Users/Tacit/Sites/MorPa/protected/views/site/pages/about.php (27)
+in /Users/Tacit/Sites/MorPa/index.php (23)
+2016/01/20 22:54:02 [error] [php] file_get_contents(): Filename cannot be empty (/Users/Tacit/Sites/MorPa/protected/models/NewsEntry.php:117)
+Stack trace:
+#0 /Users/Tacit/Sites/framework/web/CBaseController.php(126): require()
+#1 /Users/Tacit/Sites/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#2 /Users/Tacit/Sites/framework/web/CController.php(869): SiteController->renderFile()
+#3 /Users/Tacit/Sites/framework/web/CController.php(782): SiteController->renderPartial()
+#4 /Users/Tacit/Sites/framework/web/actions/CViewAction.php(140): SiteController->render()
+#5 /Users/Tacit/Sites/framework/web/actions/CAction.php(76): CViewAction->run()
+#6 /Users/Tacit/Sites/framework/web/CController.php(308): CViewAction->runWithParams()
+#7 /Users/Tacit/Sites/framework/web/CController.php(286): SiteController->runAction()
+#8 /Users/Tacit/Sites/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#9 /Users/Tacit/Sites/framework/web/CWebApplication.php(282): SiteController->run()
+#10 /Users/Tacit/Sites/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#11 /Users/Tacit/Sites/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#12 /Users/Tacit/Sites/MorPa/index.php(23): CWebApplication->run()
+REQUEST_URI=/MorPa/index.php?r=site/page&view=about
+in /Users/Tacit/Sites/MorPa/protected/models/NewsEntry.php (117)
+in /Users/Tacit/Sites/MorPa/protected/views/site/pages/about.php (27)
+in /Users/Tacit/Sites/MorPa/index.php (23)
+2016/01/20 22:54:39 [error] [php] file_get_contents(): Filename cannot be empty (/Users/Tacit/Sites/MorPa/protected/models/NewsEntry.php:117)
+Stack trace:
+#0 /Users/Tacit/Sites/framework/web/CBaseController.php(126): require()
+#1 /Users/Tacit/Sites/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#2 /Users/Tacit/Sites/framework/web/CController.php(869): SiteController->renderFile()
+#3 /Users/Tacit/Sites/framework/web/CController.php(782): SiteController->renderPartial()
+#4 /Users/Tacit/Sites/framework/web/actions/CViewAction.php(140): SiteController->render()
+#5 /Users/Tacit/Sites/framework/web/actions/CAction.php(76): CViewAction->run()
+#6 /Users/Tacit/Sites/framework/web/CController.php(308): CViewAction->runWithParams()
+#7 /Users/Tacit/Sites/framework/web/CController.php(286): SiteController->runAction()
+#8 /Users/Tacit/Sites/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#9 /Users/Tacit/Sites/framework/web/CWebApplication.php(282): SiteController->run()
+#10 /Users/Tacit/Sites/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#11 /Users/Tacit/Sites/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#12 /Users/Tacit/Sites/MorPa/index.php(23): CWebApplication->run()
+REQUEST_URI=/MorPa/index.php?r=site/page&view=about
+in /Users/Tacit/Sites/MorPa/protected/models/NewsEntry.php (117)
+in /Users/Tacit/Sites/MorPa/protected/views/site/pages/about.php (27)
+in /Users/Tacit/Sites/MorPa/index.php (23)
+2016/01/20 22:54:53 [error] [php] file_get_contents(): Filename cannot be empty (/Users/Tacit/Sites/MorPa/protected/models/NewsEntry.php:117)
+Stack trace:
+#0 /Users/Tacit/Sites/framework/web/CBaseController.php(126): require()
+#1 /Users/Tacit/Sites/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#2 /Users/Tacit/Sites/framework/web/CController.php(869): SiteController->renderFile()
+#3 /Users/Tacit/Sites/framework/web/CController.php(782): SiteController->renderPartial()
+#4 /Users/Tacit/Sites/framework/web/actions/CViewAction.php(140): SiteController->render()
+#5 /Users/Tacit/Sites/framework/web/actions/CAction.php(76): CViewAction->run()
+#6 /Users/Tacit/Sites/framework/web/CController.php(308): CViewAction->runWithParams()
+#7 /Users/Tacit/Sites/framework/web/CController.php(286): SiteController->runAction()
+#8 /Users/Tacit/Sites/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#9 /Users/Tacit/Sites/framework/web/CWebApplication.php(282): SiteController->run()
+#10 /Users/Tacit/Sites/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#11 /Users/Tacit/Sites/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#12 /Users/Tacit/Sites/MorPa/index.php(23): CWebApplication->run()
+REQUEST_URI=/MorPa/index.php?r=site/page&view=about
+in /Users/Tacit/Sites/MorPa/protected/models/NewsEntry.php (117)
+in /Users/Tacit/Sites/MorPa/protected/views/site/pages/about.php (27)
+in /Users/Tacit/Sites/MorPa/index.php (23)
+2016/01/20 23:22:35 [error] [php] mysql_fetch_array() expects parameter 1 to be resource, null given (/Users/Tacit/Sites/MorPa/protected/views/site/pages/about.php:33)
+Stack trace:
+#0 /Users/Tacit/Sites/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#1 /Users/Tacit/Sites/framework/web/CController.php(869): SiteController->renderFile()
+#2 /Users/Tacit/Sites/framework/web/CController.php(782): SiteController->renderPartial()
+#3 /Users/Tacit/Sites/framework/web/actions/CViewAction.php(140): SiteController->render()
+#4 /Users/Tacit/Sites/framework/web/actions/CAction.php(76): CViewAction->run()
+#5 /Users/Tacit/Sites/framework/web/CController.php(308): CViewAction->runWithParams()
+#6 /Users/Tacit/Sites/framework/web/CController.php(286): SiteController->runAction()
+#7 /Users/Tacit/Sites/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#8 /Users/Tacit/Sites/framework/web/CWebApplication.php(282): SiteController->run()
+#9 /Users/Tacit/Sites/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#10 /Users/Tacit/Sites/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#11 /Users/Tacit/Sites/MorPa/index.php(23): CWebApplication->run()
+REQUEST_URI=/MorPa/index.php?r=site/page&view=about
+in /Users/Tacit/Sites/MorPa/protected/views/site/pages/about.php (33)
+in /Users/Tacit/Sites/MorPa/index.php (23)
+2016/01/20 23:27:22 [error] [php] include(Series.php): failed to open stream: No such file or directory (/Users/Tacit/Sites/framework/YiiBase.php:432)
+Stack trace:
+#0 /Users/Tacit/Sites/framework/db/ar/CActiveRecord.php(395): spl_autoload_call()
+#1 /Users/Tacit/Sites/framework/web/CActiveDataProvider.php(165): model()
+#2 /Users/Tacit/Sites/framework/web/CActiveDataProvider.php(87): CActiveDataProvider->getModel()
+#3 /Users/Tacit/Sites/MorPa/protected/views/site/pages/about.php(41): CActiveDataProvider->__construct()
+#4 /Users/Tacit/Sites/framework/web/CBaseController.php(126): require()
+#5 /Users/Tacit/Sites/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#6 /Users/Tacit/Sites/framework/web/CController.php(869): SiteController->renderFile()
+#7 /Users/Tacit/Sites/framework/web/CController.php(782): SiteController->renderPartial()
+#8 /Users/Tacit/Sites/framework/web/actions/CViewAction.php(140): SiteController->render()
+#9 /Users/Tacit/Sites/framework/web/actions/CAction.php(76): CViewAction->run()
+#10 /Users/Tacit/Sites/framework/web/CController.php(308): CViewAction->runWithParams()
+#11 /Users/Tacit/Sites/framework/web/CController.php(286): SiteController->runAction()
+#12 /Users/Tacit/Sites/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#13 /Users/Tacit/Sites/framework/web/CWebApplication.php(282): SiteController->run()
+#14 /Users/Tacit/Sites/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#15 /Users/Tacit/Sites/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#16 /Users/Tacit/Sites/MorPa/index.php(23): CWebApplication->run()
+REQUEST_URI=/MorPa/index.php?r=site/page&view=about
+in /Users/Tacit/Sites/MorPa/protected/views/site/pages/about.php (41)
+in /Users/Tacit/Sites/MorPa/index.php (23)
+2016/01/20 23:27:34 [error] [php] require(): Filename cannot be empty (/Users/Tacit/Sites/framework/web/CBaseController.php:130)
+Stack trace:
+#0 /Users/Tacit/Sites/framework/zii/widgets/CListView.php(291): SiteController->renderFile()
+#1 /Users/Tacit/Sites/framework/zii/widgets/CBaseListView.php(181): CListView->renderItems()
+#2 unknown(0): CListView->renderSection()
+#3 /Users/Tacit/Sites/framework/zii/widgets/CBaseListView.php(164): preg_replace_callback()
+#4 /Users/Tacit/Sites/framework/zii/widgets/CBaseListView.php(149): CListView->renderContent()
+#5 /Users/Tacit/Sites/framework/web/CBaseController.php(181): CListView->run()
+#6 /Users/Tacit/Sites/MorPa/protected/views/site/pages/about.php(46): SiteController->widget()
+#7 /Users/Tacit/Sites/framework/web/CBaseController.php(126): require()
+#8 /Users/Tacit/Sites/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#9 /Users/Tacit/Sites/framework/web/CController.php(869): SiteController->renderFile()
+#10 /Users/Tacit/Sites/framework/web/CController.php(782): SiteController->renderPartial()
+#11 /Users/Tacit/Sites/framework/web/actions/CViewAction.php(140): SiteController->render()
+#12 /Users/Tacit/Sites/framework/web/actions/CAction.php(76): CViewAction->run()
+#13 /Users/Tacit/Sites/framework/web/CController.php(308): CViewAction->runWithParams()
+#14 /Users/Tacit/Sites/framework/web/CController.php(286): SiteController->runAction()
+#15 /Users/Tacit/Sites/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#16 /Users/Tacit/Sites/framework/web/CWebApplication.php(282): SiteController->run()
+#17 /Users/Tacit/Sites/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#18 /Users/Tacit/Sites/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#19 /Users/Tacit/Sites/MorPa/index.php(23): CWebApplication->run()
+REQUEST_URI=/MorPa/index.php?r=site/page&view=about
+in /Users/Tacit/Sites/MorPa/protected/views/site/pages/about.php (46)
+in /Users/Tacit/Sites/MorPa/index.php (23)
+2016/01/20 23:27:54 [error] [php] require(): Filename cannot be empty (/Users/Tacit/Sites/framework/web/CBaseController.php:130)
+Stack trace:
+#0 /Users/Tacit/Sites/framework/zii/widgets/CListView.php(291): SiteController->renderFile()
+#1 /Users/Tacit/Sites/framework/zii/widgets/CBaseListView.php(181): CListView->renderItems()
+#2 unknown(0): CListView->renderSection()
+#3 /Users/Tacit/Sites/framework/zii/widgets/CBaseListView.php(164): preg_replace_callback()
+#4 /Users/Tacit/Sites/framework/zii/widgets/CBaseListView.php(149): CListView->renderContent()
+#5 /Users/Tacit/Sites/framework/web/CBaseController.php(181): CListView->run()
+#6 /Users/Tacit/Sites/MorPa/protected/views/site/pages/about.php(46): SiteController->widget()
+#7 /Users/Tacit/Sites/framework/web/CBaseController.php(126): require()
+#8 /Users/Tacit/Sites/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#9 /Users/Tacit/Sites/framework/web/CController.php(869): SiteController->renderFile()
+#10 /Users/Tacit/Sites/framework/web/CController.php(782): SiteController->renderPartial()
+#11 /Users/Tacit/Sites/framework/web/actions/CViewAction.php(140): SiteController->render()
+#12 /Users/Tacit/Sites/framework/web/actions/CAction.php(76): CViewAction->run()
+#13 /Users/Tacit/Sites/framework/web/CController.php(308): CViewAction->runWithParams()
+#14 /Users/Tacit/Sites/framework/web/CController.php(286): SiteController->runAction()
+#15 /Users/Tacit/Sites/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#16 /Users/Tacit/Sites/framework/web/CWebApplication.php(282): SiteController->run()
+#17 /Users/Tacit/Sites/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#18 /Users/Tacit/Sites/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#19 /Users/Tacit/Sites/MorPa/index.php(23): CWebApplication->run()
+REQUEST_URI=/MorPa/index.php?r=site/page&view=about
+in /Users/Tacit/Sites/MorPa/protected/views/site/pages/about.php (46)
+in /Users/Tacit/Sites/MorPa/index.php (23)
+2016/01/20 23:29:08 [error] [php] require(): Filename cannot be empty (/Users/Tacit/Sites/framework/web/CBaseController.php:130)
+Stack trace:
+#0 /Users/Tacit/Sites/framework/zii/widgets/CListView.php(291): SiteController->renderFile()
+#1 /Users/Tacit/Sites/framework/zii/widgets/CBaseListView.php(181): CListView->renderItems()
+#2 unknown(0): CListView->renderSection()
+#3 /Users/Tacit/Sites/framework/zii/widgets/CBaseListView.php(164): preg_replace_callback()
+#4 /Users/Tacit/Sites/framework/zii/widgets/CBaseListView.php(149): CListView->renderContent()
+#5 /Users/Tacit/Sites/framework/web/CBaseController.php(181): CListView->run()
+#6 /Users/Tacit/Sites/MorPa/protected/views/site/pages/about.php(46): SiteController->widget()
+#7 /Users/Tacit/Sites/framework/web/CBaseController.php(126): require()
+#8 /Users/Tacit/Sites/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#9 /Users/Tacit/Sites/framework/web/CController.php(869): SiteController->renderFile()
+#10 /Users/Tacit/Sites/framework/web/CController.php(782): SiteController->renderPartial()
+#11 /Users/Tacit/Sites/framework/web/actions/CViewAction.php(140): SiteController->render()
+#12 /Users/Tacit/Sites/framework/web/actions/CAction.php(76): CViewAction->run()
+#13 /Users/Tacit/Sites/framework/web/CController.php(308): CViewAction->runWithParams()
+#14 /Users/Tacit/Sites/framework/web/CController.php(286): SiteController->runAction()
+#15 /Users/Tacit/Sites/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#16 /Users/Tacit/Sites/framework/web/CWebApplication.php(282): SiteController->run()
+#17 /Users/Tacit/Sites/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#18 /Users/Tacit/Sites/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#19 /Users/Tacit/Sites/MorPa/index.php(23): CWebApplication->run()
+REQUEST_URI=/MorPa/index.php?r=site/page&view=about
+in /Users/Tacit/Sites/MorPa/protected/views/site/pages/about.php (46)
+in /Users/Tacit/Sites/MorPa/index.php (23)
+2016/01/20 23:29:26 [error] [php] require(): Filename cannot be empty (/Users/Tacit/Sites/framework/web/CBaseController.php:130)
+Stack trace:
+#0 /Users/Tacit/Sites/framework/zii/widgets/CListView.php(291): SiteController->renderFile()
+#1 /Users/Tacit/Sites/framework/zii/widgets/CBaseListView.php(181): CListView->renderItems()
+#2 unknown(0): CListView->renderSection()
+#3 /Users/Tacit/Sites/framework/zii/widgets/CBaseListView.php(164): preg_replace_callback()
+#4 /Users/Tacit/Sites/framework/zii/widgets/CBaseListView.php(149): CListView->renderContent()
+#5 /Users/Tacit/Sites/framework/web/CBaseController.php(181): CListView->run()
+#6 /Users/Tacit/Sites/MorPa/protected/views/site/pages/about.php(46): SiteController->widget()
+#7 /Users/Tacit/Sites/framework/web/CBaseController.php(126): require()
+#8 /Users/Tacit/Sites/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#9 /Users/Tacit/Sites/framework/web/CController.php(869): SiteController->renderFile()
+#10 /Users/Tacit/Sites/framework/web/CController.php(782): SiteController->renderPartial()
+#11 /Users/Tacit/Sites/framework/web/actions/CViewAction.php(140): SiteController->render()
+#12 /Users/Tacit/Sites/framework/web/actions/CAction.php(76): CViewAction->run()
+#13 /Users/Tacit/Sites/framework/web/CController.php(308): CViewAction->runWithParams()
+#14 /Users/Tacit/Sites/framework/web/CController.php(286): SiteController->runAction()
+#15 /Users/Tacit/Sites/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#16 /Users/Tacit/Sites/framework/web/CWebApplication.php(282): SiteController->run()
+#17 /Users/Tacit/Sites/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#18 /Users/Tacit/Sites/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#19 /Users/Tacit/Sites/MorPa/index.php(23): CWebApplication->run()
+REQUEST_URI=/MorPa/index.php?r=site/page&view=about
+in /Users/Tacit/Sites/MorPa/protected/views/site/pages/about.php (46)
+in /Users/Tacit/Sites/MorPa/index.php (23)

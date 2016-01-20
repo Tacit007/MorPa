@@ -2,6 +2,7 @@
 
 //error_reporting(0);
 date_default_timezone_set('Europe/Kiev');
+require "protected/extensions/kint/Kint.class.php";
 
 
 
