@@ -1337,3 +1337,22 @@ Stack trace:
 REQUEST_URI=/MorPa/index.php?r=site/page&view=about
 in /Users/Tacit/Sites/MorPa/protected/views/site/pages/about.php (46)
 in /Users/Tacit/Sites/MorPa/index.php (23)
+2016/01/21 14:37:53 [error] [php] SimpleXMLElement::__construct(): Entity: line 292: parser error : Premature end of data in tag description line 260 (/Users/Tacit/Sites/MorPa/protected/models/NewsEntry.php:101)
+Stack trace:
+#0 /Users/Tacit/Sites/framework/web/CBaseController.php(126): require()
+#1 /Users/Tacit/Sites/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#2 /Users/Tacit/Sites/framework/web/CController.php(869): SiteController->renderFile()
+#3 /Users/Tacit/Sites/framework/web/CController.php(782): SiteController->renderPartial()
+#4 /Users/Tacit/Sites/MorPa/protected/controllers/SiteController.php(32): SiteController->render()
+#5 /Users/Tacit/Sites/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#6 /Users/Tacit/Sites/framework/web/CController.php(308): CInlineAction->runWithParams()
+#7 /Users/Tacit/Sites/framework/web/CController.php(286): SiteController->runAction()
+#8 /Users/Tacit/Sites/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#9 /Users/Tacit/Sites/framework/web/CWebApplication.php(282): SiteController->run()
+#10 /Users/Tacit/Sites/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#11 /Users/Tacit/Sites/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#12 /Users/Tacit/Sites/MorPa/index.php(23): CWebApplication->run()
+REQUEST_URI=/MorPa/index.php?r=site/index
+in /Users/Tacit/Sites/MorPa/protected/models/NewsEntry.php (101)
+in /Users/Tacit/Sites/MorPa/protected/views/site/index.php (63)
+in /Users/Tacit/Sites/MorPa/protected/controllers/SiteController.php (32)
