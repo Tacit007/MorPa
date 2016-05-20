@@ -93,11 +93,11 @@ echo "</ul>";*/
 ?>
 
 <form method="post">
-    <input type="text" name="link" value="<?php 
+    <input id="big" type="text" name="link" value="<?php 
         if ($_POST['link'])
             echo $_POST['link'];
         else
             echo "dou.ua";
     ?>" >
-    <input type="submit">
+    <input id="big" type="submit">
 </form>

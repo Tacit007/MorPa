@@ -227,3 +227,7 @@ div.search-form
 {
 	background: #80CFFF;
 }
+
+input, a {
+    font-size: 28px;
+}
