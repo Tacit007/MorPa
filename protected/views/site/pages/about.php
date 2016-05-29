@@ -5,15 +5,21 @@ $this->pageTitle=Yii::app()->name . ' - About';
 $this->breadcrumbs=array(
 	'News',
 );
+
+//Kint::dump (Yii::app()->user->name);
+
 ?>
 <h1>News</h1>
 
 <form method="post">
     <input type="text" name="email" value="<?php 
+        echo Yii::app()->user->name;                              
+    /*
         if ($_POST['email'])
             echo $_POST['email'];
         else
             echo "tacit.gugl@gmail.com";
+    */
     ?>" >
     <input type="submit">
 </form>

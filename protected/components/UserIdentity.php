@@ -21,7 +21,8 @@ class UserIdentity extends CUserIdentity
 			// username => password
 			'demo'=>'demo',
 			'admin'=>'admin',
-            'tacit.gugl@gmail.com'=>'12345'
+            'tacit.gugl@gmail.com'=>'12345',
+            'oleg.tacit.007@yandex.ru'=>'12345'
 		);
 		if(!isset($users[$this->username]))
 			$this->errorCode=self::ERROR_USERNAME_INVALID;
