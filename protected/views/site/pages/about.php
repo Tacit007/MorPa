@@ -5,10 +5,12 @@ $this->pageTitle=Yii::app()->name . ' - About';
 $this->breadcrumbs=array(
 	'News',
 );
-
-//Kint::dump (Yii::app()->user->name);
-
 ?>
+
+<?php if(Yii::app()->user->name == "Guest") {
+    header("Location: index.php?r=site/login");
+} ?>
+
 <h1>News</h1>
 
 <form method="post">
@@ -30,7 +32,8 @@ $this->breadcrumbs=array(
     $headers = "Content-Type: text/html; charset=UTF-8";
     
     $today = date('Y-m-d');
-    $sql = "SELECT title, link FROM newsEntry WHERE date LIKE '$today%' ORDER BY date ASC";
+    
+    $sql = "SELECT title, link FROM newsEntry, feed WHERE date LIKE '$today%' AND feed.id = newsEntry.feedID AND feed.user='".$_POST['email']."' ORDER BY date ASC";
     $result = mysql_query($sql);
     
     while($row = mysql_fetch_assoc($result))

@@ -6,6 +6,10 @@ $this->pageTitle=Yii::app()->name;
 
 <h1>Welcome to <i><?php echo CHtml::encode(Yii::app()->name); ?></i></h1>
 
+<?php if(Yii::app()->user->name == "Guest") {
+    header("Location: index.php?r=site/login");
+} ?>
+
 <?php if ($_SERVER['REQUEST_METHOD'] == "POST") {    
     if (substr($_POST['link'], 0, 4) != "www." && substr($_POST['link'], 0, 4) != "http" ) 
         $_POST['link'] = "www.".$_POST['link'];
@@ -30,7 +34,7 @@ $this->pageTitle=Yii::app()->name;
         $feedURL = $response->responseData->url;
 
         $sql = "
-            INSERT INTO feed (feed.feedURL) VALUES ('$feedURL');
+            INSERT INTO feed (feed.feedURL, feed.user) VALUES ('$feedURL', '".Yii::app()->user->name."');
         ";
         $command = Yii::app()->db->createCommand($sql)->execute();
         

@@ -96,25 +96,29 @@ class NewsEntry extends CActiveRecord
     }
     
     public static function feedToNews($feedURL){
-    
         $content = file_get_contents($feedURL);
         $x = new SimpleXmlElement($content);
 
         foreach($x->channel->item as $entry) {
             $list[] = $entry;
         }
-
+        
+        Kint::dump($entry);
+        
         foreach($list as $entry) {
             $aLink = $entry->link;
             $aTitle = substr($entry->title, 0, 500);
             $aDate = DateTime::createFromFormat(DateTime::RSS, $entry->pubDate)->format("Y-m-d H:i:s");
-
-            $sql = "INSERT INTO newsEntry (link, title, date) VALUES ( '$aLink', '$aTitle', '$aDate');";
+            $feedID = mysql_fetch_assoc(mysql_query(
+            "SELECT id FROM feed WHERE feedURL='".$feedURL."';"
+        )); $feedID = $feedID['id'];
+            
+            $sql = "INSERT INTO newsEntry (link, title, date, feedID) VALUES ( '$aLink', '$aTitle', '$aDate', '$feedID');";
 
             //echo $sql."<br><br>";
-            Yii::app()->db->createCommand($sql)->execute();
+            mysql_query($sql);
         
-        $sql = "
+        /* $sql = "
             DELETE newsEntry 
             FROM newsEntry
             LEFT OUTER JOIN (
@@ -127,7 +131,7 @@ class NewsEntry extends CActiveRecord
                KeepRows.id IS NULL
         ";
         //echo $sql;
-        $command = Yii::app()->db->createCommand($sql)->execute();
+        $command = Yii::app()->db->createCommand($sql)->execute();*/
         }
     }
     
