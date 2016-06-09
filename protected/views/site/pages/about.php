@@ -15,13 +15,7 @@ $this->breadcrumbs=array(
 
 <form method="post">
     <input type="text" name="email" value="<?php 
-        echo Yii::app()->user->name;                              
-    /*
-        if ($_POST['email'])
-            echo $_POST['email'];
-        else
-            echo "tacit.gugl@gmail.com";
-    */
+        echo Yii::app()->user->name;
     ?>" >
     <input type="submit">
 </form>

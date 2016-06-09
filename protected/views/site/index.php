@@ -13,9 +13,6 @@ $this->pageTitle=Yii::app()->name;
 <?php if ($_SERVER['REQUEST_METHOD'] == "POST") {    
     if (substr($_POST['link'], 0, 4) != "www." && substr($_POST['link'], 0, 4) != "http" ) 
         $_POST['link'] = "www.".$_POST['link'];
-    //echo $_POST['link'];
-    
-    //Kint::dump($_POST['link']);
     
     $ch = curl_init();
 
@@ -25,10 +22,7 @@ $this->pageTitle=Yii::app()->name;
     curl_setopt($ch, CURLOPT_HEADER, 0);
 
     $responseJSON = curl_exec($ch);
-    
     $response = json_decode ($responseJSON);
-    
-    //Kint::dump($response);
     
     if ($response->responseDetails != "no associated feed") {
         $feedURL = $response->responseData->url;
@@ -37,8 +31,6 @@ $this->pageTitle=Yii::app()->name;
             INSERT INTO feed (feed.feedURL, feed.user) VALUES ('$feedURL', '".Yii::app()->user->name."');
         ";
         $command = Yii::app()->db->createCommand($sql)->execute();
-        
-        ///////////////////////////////////////////
         
         $sql = "
             DELETE feed 
@@ -58,43 +50,12 @@ $this->pageTitle=Yii::app()->name;
         echo 'Added! '.$feedURL.'<br><br><br>';
     } else echo "<h2>Ссылка не может быть использована</h2>";
     
-    
-    
-    //////////////////////////////////////////////////////////////////////////////
-    
-    
-    
     NewsEntry::feedToNews($feedURL);
-    
-    //echo $sqlAll;
-    
-    
-    /*echo "<ul>";
-    foreach($list as $entry) {
-        echo "<li><a href='$entry->link' title='$entry->title'>" . $entry->title . "</a></li>";
-    }
-    echo "</ul>";*/
-    
-    //unset($list);
-
-
     NewsEntry::feedToList($feedURL);
-/*$content = file_get_contents($feedURL);
-$x = new SimpleXmlElement($content);
-//Kint::dump($x->channel);
-foreach($x->channel->item as $entry) {
-    $list[] = $entry;
-}
-
-echo "<ul>";
-foreach($list as $entry) {
-    echo "<li><a href='$entry->link' title='$entry->title'>" . $entry->title . "</a></li>";
-}
-echo "</ul>";*/
     
 }
 
-//TODO: multiple users
+//TODO: error message
 
 ?>
 
