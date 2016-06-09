@@ -1,14 +1,8 @@
-<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
-
 <?php
 
 //error_reporting(0);
 date_default_timezone_set('Europe/Kiev');
 require "protected/extensions/kint/Kint.class.php";
-
-
-
-
 
 //DEFAULT CODE
 
