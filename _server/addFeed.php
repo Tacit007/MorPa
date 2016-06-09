@@ -14,10 +14,7 @@
 	  or die("Couldn't open database $myDB");
 
     mysql_query("SET NAMES utf8");
-
-    //ini_set("allow_url_include", true);
-    require "kint/Kint.class.php";
-
+    
     date_default_timezone_set("Europe/Kiev");
 ?>
 
