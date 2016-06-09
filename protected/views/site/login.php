@@ -11,9 +11,6 @@ $this->breadcrumbs=array(
 
 <h1>Login</h1>
 
-<p>tacit.gugl@gmail.com</p>
-<p>oleg.tacit.007@yandex.ua</p>
-
 <!--<p>Please fill out the following form with your login credentials:</p>-->
 
 <div class="form">
