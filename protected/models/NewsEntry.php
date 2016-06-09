@@ -95,7 +95,7 @@ class NewsEntry extends CActiveRecord
         return parent::model($className);
     }
     
-    public static function feedToNews($feedURL){
+    /*public static function feedToNews($feedURL){
         $content = file_get_contents($feedURL);
         $x = new SimpleXmlElement($content);
 
@@ -148,5 +148,5 @@ class NewsEntry extends CActiveRecord
             echo "<li><a href='$entry->link' title='$entry->title'>" . $entry->title . "</a></li>";
         }
         echo "</ul>";
-    }
+    }*/
 }
