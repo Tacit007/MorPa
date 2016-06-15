@@ -11,7 +11,7 @@ $this->pageTitle=Yii::app()->name;
 <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
 
 <?php if ($_SERVER['REQUEST_METHOD'] == "POST") { ?> <script>
-    $.post('_server/addFeed.php', { email: '<?=$_POST['email']?>', link: '<?=$_POST['link']?>' }).done(function(data) {
+    $.post('/originals/MorPa-server/addFeed.php', { email: '<?=$_POST['email']?>', link: '<?=$_POST['link']?>' }).done(function(data) {
         $("#result").html(data);
     });
 </script><?php } ?>

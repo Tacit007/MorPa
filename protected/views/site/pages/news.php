@@ -16,7 +16,7 @@ $this->breadcrumbs=array(
 <h1>News</h1>
 
 <?php if ($_SERVER['REQUEST_METHOD'] == "POST") { ?> <script>
-    $.post('_server/sendEmail.php', { user: '<?=$_POST['user']?>', email: '<?=$_POST['email']?>' }).done(function(data) {
+    $.post('/originals/MorPa-server/sendEmail.php', { user: '<?=$_POST['user']?>', email: '<?=$_POST['email']?>' }).done(function(data) {
         $("#result").html(data);
     });
 </script><?php } ?>

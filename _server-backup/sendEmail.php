@@ -33,7 +33,7 @@ function sendEmail($user, $email){
     $today = date('Y-m-d');
     
     $sql = "SELECT title, link FROM newsEntry, feed WHERE "
-        //." date LIKE '$today%' AND "
+        ." date LIKE '$today%' AND "
         ."feed.id = newsEntry.feedID AND feed.user='$user' ORDER BY date ASC";
     $result = mysql_query($sql);
     
